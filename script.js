@@ -117,4 +117,36 @@ for (var fruta = 0; fruta < frutas.length; fruta++) {
 /*COLOQUE A ULTIMA FRUTA DA ARRAY EM UMA VARIAVEL SEM REMOVER A MESMA DA ARRAY */
 var ultimafruta = frutas[frutas.length - 1];
 
-/**/
+/*-------------------------ATRIBUIÇÃO E TERNÁRIO---------------------------------------*/
+/*SOME 500 AO VALOR DE SCROLL ABAIXO, ATRIBUINDO O NOVO VALOR A SCROLL */
+var scroll = 1000;
+scroll += 500;
+console.log(scroll);
+
+/*ATRIBUA TRUE  PARA A VARIAVEL DARCREDITO, CASO O CLIENTE POSSUA CARRO E CASA, E FALSE CASO CONTRÁRIO */
+var possuicarro = true;
+var possuicasa = true;
+var darcredito =
+  possuicasa && possuicarro
+    ? "dar credito ao cliente"
+    : "negar credito ao cliente";
+console.log(darcredito);
+
+/*-----------------------------------------------------------------------------------------*/
+
+/*----------------------------------DOOM-------------------------------- */
+/*RETORNE O URL DA PÁGINA ATUAL UTILIZANDO O OBJETO WINDOW */
+const linkurl = window.location.href;
+console.log(linkurl);
+
+/*SELECIONE O PRIMEIRO ELEMENTO DA PÁGINA QUE POSSUA A CLASSE ATIVO */
+const elementpagina = document.querySelector(".ativo");
+console.log(elementpagina);
+
+/*RETORNE A LINGUAGEM DO NAVEGADOR */
+const linguanavegador = window.navigator.language;
+console.log(linguanavegador);
+
+/*RETORNE A LARGURA DA JANELA */
+const largurajanela = window.innerWidth;
+console.log(largurajanela);
