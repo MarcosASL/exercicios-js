@@ -76,9 +76,9 @@ nome3.endsWith;
 nome3.indexOf;
 
 /*NOMEIE 5 PROPRIEDADES OU MÉTODOS DE ELEMENTOS DO DOM*/
-var domelement = document.createElement("div");
-domelement.addEventListener;
-domelement.appendChild;
-domelement.querySelectorAll;
-domelement.releasePointerCapture;
-domelement.ariaHidden;
+// var domelement = document.createElement("div");
+// domelement.addEventListener;
+// domelement.appendChild;
+// domelement.querySelectorAll;
+// domelement.releasePointerCapture;
+// domelement.ariaHidden;
