@@ -100,10 +100,21 @@ var listaCompras = [
   "abacaxi",
   "goiaba",
   "laranja",
-  "uva",
+  "uva ACABA AQUI",
 ];
 for (var p = 0; p < listaCompras.length; p++) {
   console.log(listaCompras[p]);
 }
 
 /*INTERAJA COM UM LOOP NAS FRUTAS ABAIXO E PARE AO CHEGAR EM PERA */
+var frutas = ["banana", "maçã", "pera", "uva", "melância"];
+for (var fruta = 0; fruta < frutas.length; fruta++) {
+  console.log(frutas[fruta]);
+  if (frutas[fruta] === "pera") {
+    break;
+  }
+}
+/*COLOQUE A ULTIMA FRUTA DA ARRAY EM UMA VARIAVEL SEM REMOVER A MESMA DA ARRAY */
+var ultimafruta = frutas[frutas.length - 1];
+
+/**/
