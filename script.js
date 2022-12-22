@@ -76,9 +76,34 @@ nome3.endsWith;
 nome3.indexOf;
 
 /*NOMEIE 5 PROPRIEDADES OU MÉTODOS DE ELEMENTOS DO DOM*/
-// var domelement = document.createElement("div");
-// domelement.addEventListener;
-// domelement.appendChild;
-// domelement.querySelectorAll;
-// domelement.releasePointerCapture;
-// domelement.ariaHidden;
+var domelement = document.createElement("div");
+domelement.addEventListener;
+domelement.appendChild;
+domelement.querySelectorAll;
+domelement.releasePointerCapture;
+domelement.ariaHidden;
+TextDecoderStream.arguments;
+
+/*--------------------------------ARRAYS E LOOP-------------------------------------------------*/
+
+/*CRIE UMA ARRAY COM OS ANOS QUE O BRASIL GANHOU A COPA: 1959, 1962, 1970, 1994, 2002. INTERAJA COM A ARRAY UTILIZANDO UM LOOP PARA MOSTRAR NO CONSOLE A SEGUINTE MENSAGEM : " O BRASIL GANHOU A COPA DE ${ANO}" */
+var BrasilCampeao = [1959, 1962, 1970, 1994, 2002];
+for (var i = 0; i < BrasilCampeao.length; i++) {
+  console.log(`O Brasil ganhou a copa de ${BrasilCampeao[i]}`);
+}
+
+/*lista de compras */
+var listaCompras = [
+  "banana",
+  "abacate",
+  "tangerina",
+  "abacaxi",
+  "goiaba",
+  "laranja",
+  "uva",
+];
+for (var p = 0; p < listaCompras.length; p++) {
+  console.log(listaCompras[p]);
+}
+
+/*INTERAJA COM UM LOOP NAS FRUTAS ABAIXO E PARE AO CHEGAR EM PERA */
