@@ -13,4 +13,14 @@ function Nomecompleto(nome, sobrenome) {
   return `${nome}  ${sobrenome}`;
 }
 
-/*CRIE UMA FUNCTION QUE VERIFICA SE UM NÚMERO É PAR (use modulo =%)*/
+/*CRIE UMA FUNCTION QUE VERIFICA SE UM NÚMERO É PAR (use modulo %)*/
+function Parcheck(numero) {
+  var modulo = numero % 2;
+  if (modulo === 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+/**/
