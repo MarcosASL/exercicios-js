@@ -1,3 +1,4 @@
+/*------------------------------FUNCTION------------------------------------------ */
 /*Crie uma function para verificar se um valor é true*/
 function trueoufalse(valor) {
   return !!valor;
@@ -29,7 +30,26 @@ function tipodedado(dado) {
 }
 
 /*addEventListerner é uma function nativa do JS, o primeiro parametro é o evento que ocorre e o segundo é a callback, utilize essa function para mostrar no console o seu nome completo quando o evento 'scroll' ocorrer */
-
 addEventListener("scroll", function () {
   // console.log("Marcos barbao");
 });
+/*---------------------------------------------------------------------------------*/
+
+/*--------------------------------OBJETOS-------------------------------------------------*/
+
+/*Crie um objeto com os seus dados pessoais. Deve possuir pelo menos duas propriedades = nome e sobrenome */
+var meusdados = {
+  nome: "marcos",
+  sobreneomes: "antonio",
+  idade: 30,
+  corfavortia: "azul",
+  possuifaculdade: true,
+};
+meusdados.idade;
+meusdados.corfavortia;
+
+/*CRIE UM MÉTODO NO OBJETO ANTERIOR QUE MOSTRE O SEU NOME COMPLETO */
+meusdados.Nomecompleto = function () {
+  return `${this.nome} ${this.sobreneomes}`;
+};
+meusdados.Nomecompleto();
