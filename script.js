@@ -53,3 +53,32 @@ meusdados.Nomecompleto = function () {
   return `${this.nome} ${this.sobreneomes}`;
 };
 meusdados.Nomecompleto();
+
+/*CRIE UM OBJETO CACHORRO QUE REPRESENTE UM LABRADOR, PRETO COM 10 ANOS, QUE LATE AO VER UM HOMEM */
+var cachorro = {
+  raça: "Labrador",
+  cor: "preto",
+  idade: 10 + " anos",
+  TemHomemNarua: true,
+  Latir(pessoa) {
+    if (pessoa === "Homem") {
+      return "Latir";
+    } else {
+      return "NãoLatir";
+    }
+  },
+};
+
+/*NOMEIE 3 PROPRIEDADES OU MÉTODOS DE STRING*/
+var nome3 = "Marcos";
+nome3.concat;
+nome3.endsWith;
+nome3.indexOf;
+
+/*NOMEIE 5 PROPRIEDADES OU MÉTODOS DE ELEMENTOS DO DOM*/
+var domelement = document.createElement("div");
+domelement.addEventListener;
+domelement.appendChild;
+domelement.querySelectorAll;
+domelement.releasePointerCapture;
+domelement.ariaHidden;
