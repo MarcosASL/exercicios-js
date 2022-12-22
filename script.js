@@ -23,4 +23,9 @@ function Parcheck(numero) {
   }
 }
 
-/**/
+/*CRIAR FUNCTION QUE RETORNE O TIPO DE DADO DO ARGUMENTO PASSADO NELA (typeof)*/
+function tipodedado(dado) {
+  return typeof dado;
+}
+
+/*addEventListerner é uma function nativa do JS, o primeiro parametro é o evento que ocorre e o segundo é a callback, utilize essa function para mostrar no console o seu nome completo quando o evento 'scroll' ocorrer */
