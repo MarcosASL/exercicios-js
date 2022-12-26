@@ -106,6 +106,11 @@ for (var p = 0; p < listaCompras.length; p++) {
   console.log(listaCompras[p]);
 }
 
+var listaMercado = ["cenoura", "leite", "carne", "sabão", "biscoito"];
+for (var h = 0; h < listaMercado.length; h++) {
+  console.log(listaMercado[h]);
+}
+
 /*INTERAJA COM UM LOOP NAS FRUTAS ABAIXO E PARE AO CHEGAR EM PERA */
 var frutas = ["banana", "maçã", "pera", "uva", "melância"];
 for (var fruta = 0; fruta < frutas.length; fruta++) {
