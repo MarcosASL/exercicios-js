@@ -5,6 +5,9 @@ function verificatrue(valor) {
 }
 
 /*Crie uma function matemática que retorne o perímetro de um quadrado, obs: perímetro é a soma dos quatro lados do quadrado*/
+function areaquadrado(lado) {
+  return lado * lado;
+}
 
 /*Crie uma function que retorne seu Nome completo, ela deve possuir o parâmetros: nome e sobrenome*/
 
