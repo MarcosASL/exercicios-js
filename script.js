@@ -66,6 +66,10 @@ var cachorrobom = {
 };
 
 /*NOMEIE 3 PROPRIEDADES OU MÉTODOS DE STRING*/
+// var propeMetodos = "teste";
+// propeMetodos.concat();
+// propeMetodos.length();
+// propeMetodos.forEach();
 
 /*NOMEIE 5 PROPRIEDADES OU MÉTODOS DE ELEMENTOS DO DOM*/
 
