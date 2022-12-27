@@ -68,6 +68,7 @@ var cachorro = {
     }
   },
 };
+// escreve: cachorro.Latir("Homem") R: Latir
 
 /*NOMEIE 3 PROPRIEDADES OU MÉTODOS DE STRING*/
 var nome3 = "Marcos";

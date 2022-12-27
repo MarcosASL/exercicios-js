@@ -38,10 +38,32 @@ addEventListener("scroll", function () {
 /*--------------------------------OBJETOS-------------------------------------------------*/
 
 /*Crie um objeto com os seus dados pessoais. Deve possuir pelo menos duas propriedades = nome e sobrenome */
-
+var DadosPessoais = {
+  nome: "marcos",
+  sobrenome: "lima",
+  idade: 30,
+  mascote: "gato",
+};
 /*CRIE UM MÉTODO NO OBJETO ANTERIOR QUE MOSTRE O SEU NOME COMPLETO */
+DadosPessoais.NomeCompleto = function () {
+  return `${this.nome} ${this.sobrenome}`;
+};
+DadosPessoais.NomeCompleto();
 
 /*CRIE UM OBJETO CACHORRO QUE REPRESENTE UM LABRADOR, PRETO COM 10 ANOS, QUE LATE AO VER UM HOMEM */
+var cachorrobom = {
+  raca: "Labrador",
+  cor: "preto",
+  idade: 10 + " anos",
+  TemHomemNaRua: true,
+  Latir(pessoa) {
+    if (pessoa === "Homem") {
+      return "latir";
+    } else {
+      return "NãoLatir";
+    }
+  },
+};
 
 /*NOMEIE 3 PROPRIEDADES OU MÉTODOS DE STRING*/
 
