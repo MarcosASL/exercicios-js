@@ -15,6 +15,13 @@ function nomecompletoretorn(nome, sobrenome) {
 }
 
 /*CRIE UMA FUNCTION QUE VERIFICA SE UM NÚMERO É PAR (use modulo %)*/
+function verPar(n) {
+  if (n % 2 === 0) {
+    return "é par";
+  } else {
+    return "não é par";
+  }
+}
 
 /*CRIAR FUNCTION QUE RETORNE O TIPO DE DADO DO ARGUMENTO PASSADO NELA (typeof)*/
 
