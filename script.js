@@ -29,6 +29,9 @@ function qualeoDado(dado) {
 }
 
 /*addEventListerner é uma function nativa do JS, o primeiro parametro é o evento que ocorre e o segundo é a callback, utilize essa function para mostrar no console o seu nome completo quando o evento 'scroll' ocorrer */
+addEventListener("scroll", function () {
+  // console.log("marcos antonio da silva lima");
+});
 
 /*---------------------------------------------------------------------------------*/
 
