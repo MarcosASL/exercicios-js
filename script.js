@@ -10,6 +10,9 @@ function areaquadrado(lado) {
 }
 
 /*Crie uma function que retorne seu Nome completo, ela deve possuir o parâmetros: nome e sobrenome*/
+function nomecompletoretorn(nome, sobrenome) {
+  return `${nome}  ${sobrenome}`;
+}
 
 /*CRIE UMA FUNCTION QUE VERIFICA SE UM NÚMERO É PAR (use modulo %)*/
 
