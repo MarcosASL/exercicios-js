@@ -47,17 +47,42 @@ var meusDados = {
 meusDados.nomecompleto = function () {
   return `${this.nome}  ${this.sobrenome}`;
 };
-console.log(meusDados.nomecompleto());
+// console.log(meusDados.nomecompleto());
 
 /*CRIE UM OBJETO CACHORRO QUE REPRESENTE UM LABRADOR, PRETO COM 10 ANOS, QUE LATE AO VER UM HOMEM */
+var cachorro = {
+  raça: "labrador",
+  cor: "preto",
+  idade: 10 + " anos",
+  verpessoa: true,
+  Latir(pessoa) {
+    if (pessoa === "Homem") {
+      return "Latir";
+    } else {
+      return "Não Latir";
+    }
+  },
+};
 
 /*NOMEIE 3 PROPRIEDADES OU MÉTODOS DE STRING*/
+var string = "Maquin";
+console.log(string.length);
+console.log(string.toLowerCase());
+console.log(string.match());
 
 /*NOMEIE 5 PROPRIEDADES OU MÉTODOS DE ELEMENTOS DO DOM*/
+var pegarh1 = document.querySelector("h1");
+var pegartodosp = document.querySelectorAll("p");
+var click = document.addEventListener("click", function () {
+  console.log("vc clicou BB");
+});
+var PegaID = document.getElementById("faq");
+var PegaClasse = document.getElementsByClassName("contato");
 
 /*--------------------------ARRAYS ELOOP---------------------------------*/
 
 /*CRIE UMA ARRAY COM OS ANOS QUE O BRASIL GANHOU A COPA: 1959, 1962, 1970, 1994, 2002. INTERAJA COM A ARRAY UTILIZANDO UM LOOP PARA MOSTRAR NO CONSOLE A SEGUINTE MENSAGEM : " O BRASIL GANHOU A COPA DE ${ANO}" */
+var BrasilCopas = [1959, 1962, 1970, 1994, 2004];
 
 /*INTERAJA COM UM LOOP NAS FRUTAS ABAIXO E PARE AO CHEGAR EM PERA */
 
