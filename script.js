@@ -1,79 +1,31 @@
 /*------------------------------FUNCTION------------------------------------------ */
 /*Crie uma function para verificar se um valor é true*/
-function verificatrue(valor) {
-  return !!valor;
-}
 
 /*Crie uma function matemática que retorne o perímetro de um quadrado, obs: perímetro é a soma dos quatro lados do quadrado*/
-function areaquadrado(lado) {
-  return lado * lado;
-}
 
 /*Crie uma function que retorne seu Nome completo, ela deve possuir o parâmetros: nome e sobrenome*/
-function nomecompletoretorn(nome, sobrenome) {
-  return `${nome}  ${sobrenome}`;
-}
 
 /*CRIE UMA FUNCTION QUE VERIFICA SE UM NÚMERO É PAR (use modulo %)*/
-function verPar(n) {
-  if (n % 2 === 0) {
-    return "é par";
-  } else {
-    return "não é par";
-  }
-}
 
 /*CRIAR FUNCTION QUE RETORNE O TIPO DE DADO DO ARGUMENTO PASSADO NELA (typeof)*/
-function qualeoDado(dado) {
-  return typeof dado;
-}
 
 /*addEventListerner é uma function nativa do JS, o primeiro parametro é o evento que ocorre e o segundo é a callback, utilize essa function para mostrar no console o seu nome completo quando o evento 'scroll' ocorrer */
-addEventListener("scroll", function () {
-  // console.log("marcos antonio da silva lima");
-});
 
 /*---------------------------------------------------------------------------------*/
 
 /*--------------------------------OBJETOS-------------------------------------------------*/
 
 /*Crie um objeto com os seus dados pessoais. Deve possuir pelo menos duas propriedades = nome e sobrenome */
-var DadosPessoais = {
-  nome: "marcos",
-  sobrenome: "lima",
-  idade: 30,
-  mascote: "gato",
-};
+
 /*CRIE UM MÉTODO NO OBJETO ANTERIOR QUE MOSTRE O SEU NOME COMPLETO */
-DadosPessoais.NomeCompleto = function () {
-  return `${this.nome} ${this.sobrenome}`;
-};
-DadosPessoais.NomeCompleto();
 
 /*CRIE UM OBJETO CACHORRO QUE REPRESENTE UM LABRADOR, PRETO COM 10 ANOS, QUE LATE AO VER UM HOMEM */
-var cachorrobom = {
-  raca: "Labrador",
-  cor: "preto",
-  idade: 10 + " anos",
-  TemHomemNaRua: true,
-  Latir(pessoa) {
-    if (pessoa === "Homem") {
-      return "latir";
-    } else {
-      return "NãoLatir";
-    }
-  },
-};
 
 /*NOMEIE 3 PROPRIEDADES OU MÉTODOS DE STRING*/
-// var propeMetodos = "teste";
-// propeMetodos.concat();
-// propeMetodos.length();
-// propeMetodos.forEach();
 
 /*NOMEIE 5 PROPRIEDADES OU MÉTODOS DE ELEMENTOS DO DOM*/
 
-/*--------------------------------ARRAYS E LOOP-------------------------------------------------*/
+/*--------------------------ARRAYS ELOOP---------------------------------*/
 
 /*CRIE UMA ARRAY COM OS ANOS QUE O BRASIL GANHOU A COPA: 1959, 1962, 1970, 1994, 2002. INTERAJA COM A ARRAY UTILIZANDO UM LOOP PARA MOSTRAR NO CONSOLE A SEGUINTE MENSAGEM : " O BRASIL GANHOU A COPA DE ${ANO}" */
 
