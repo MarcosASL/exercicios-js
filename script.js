@@ -9,10 +9,24 @@ function quadradop(lado) {
 }
 
 /*Crie uma function que retorne seu Nome completo, ela deve possuir o parâmetros: nome e sobrenome*/
+function meunomecompleto(nome, sobrenome) {
+  return `${nome} ${sobrenome}`;
+}
 
 /*CRIE UMA FUNCTION QUE VERIFICA SE UM NÚMERO É PAR (use modulo %)*/
+function parouimpar(n) {
+  var modulo = n % 2;
+  if (modulo === 0) {
+    return "é par papai";
+  } else {
+    return "é impar papai";
+  }
+}
 
 /*CRIAR FUNCTION QUE RETORNE O TIPO DE DADO DO ARGUMENTO PASSADO NELA (typeof)*/
+function qualDado(item) {
+  return typeof item;
+}
 
 /*addEventListerner é uma function nativa do JS, o primeiro parametro é o evento que ocorre e o segundo é a callback, utilize essa function para mostrar no console o seu nome completo quando o evento 'scroll' ocorrer */
 
