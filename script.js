@@ -29,12 +29,19 @@ function qualDado(item) {
 }
 
 /*addEventListerner é uma function nativa do JS, o primeiro parametro é o evento que ocorre e o segundo é a callback, utilize essa function para mostrar no console o seu nome completo quando o evento 'scroll' ocorrer */
-
+addEventListener("scroll", function () {
+  // console.log("marcos antonio da silva lima");
+});
 /*---------------------------------------------------------------------------------*/
 
 /*--------------------------------OBJETOS-------------------------------------------------*/
 
 /*Crie um objeto com os seus dados pessoais. Deve possuir pelo menos duas propriedades = nome e sobrenome */
+var meusDados = {
+  nome: "marcos",
+  sobrenome: "lima",
+  idade: 30 + " anos",
+};
 
 /*CRIE UM MÉTODO NO OBJETO ANTERIOR QUE MOSTRE O SEU NOME COMPLETO */
 
