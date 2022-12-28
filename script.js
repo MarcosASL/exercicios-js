@@ -4,6 +4,9 @@ function trueounaobicho(verifica) {
   return !!verifica;
 }
 /*Crie uma function matemática que retorne o perímetro de um quadrado, obs: perímetro é a soma dos quatro lados do quadrado*/
+function quadradop(lado) {
+  return lado * 4;
+}
 
 /*Crie uma function que retorne seu Nome completo, ela deve possuir o parâmetros: nome e sobrenome*/
 
