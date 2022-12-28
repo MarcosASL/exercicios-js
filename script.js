@@ -44,6 +44,10 @@ var meusDados = {
 };
 
 /*CRIE UM MÉTODO NO OBJETO ANTERIOR QUE MOSTRE O SEU NOME COMPLETO */
+meusDados.nomecompleto = function () {
+  return `${this.nome}  ${this.sobrenome}`;
+};
+console.log(meusDados.nomecompleto());
 
 /*CRIE UM OBJETO CACHORRO QUE REPRESENTE UM LABRADOR, PRETO COM 10 ANOS, QUE LATE AO VER UM HOMEM */
 
