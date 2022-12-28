@@ -240,3 +240,59 @@ function ativarLink(link) {
   }
 }
 links.forEach(ativarLink);
+
+/*DOOM PARA INICIANTES O CURSO DE JAVASCRIPT COMPLETO E6 */
+
+// Retorne no console todas as imagens do site
+const todasimg = document.querySelectorAll("img");
+console.log(todasimg);
+
+//retorne no console apenas as imagens que começarem com a palavra imagem
+const Iniciaimg = document.querySelectorAll('img[src^="./img/imagem"]');
+console.log(Iniciaimg);
+//selecione todos os links internos (onde o href começa com #)
+const linksInternob = document.querySelectorAll('[href^="#"]');
+console.log(linksInternob);
+//selecione o primeiro h2 dentro de .animais-descricao
+const primeiroH2 = document.querySelector(".animais-descricao h2");
+console.log(primeiroH2);
+//selecione o último p do site
+const ultimoP = document.querySelectorAll("p"); //25
+console.log(ultimoP[ultimoP.length - 1]);
+/*sem o -1 ele já me retornaria o ultimo 'p', porém o ultimo é base 0 e n tem o conteúdo dentro, então devemos subtrair -1, assim retorna o penultimo que é o último conteúdo! opção 2: botar --ultimoP.length */
+
+/*------------------------------------------------------------------------- */
+
+// Mostre no console cada parágrado do site
+const paragrafos = document.querySelectorAll("p");
+paragrafos.forEach((item) => {
+  console.log(item);
+});
+// Mostre o texto dos parágrafos'só o texto' no console
+paragrafos.forEach((item) => {
+  console.log(item.innerText);
+});
+
+// Como corrigir os erros abaixo:const imgs = document.querySelectorAll('img');
+
+// imgs.forEach(item, index => {
+//   console.log(item, index);
+// });
+
+// let i = 0;
+// imgs.forEach( => {
+//   console.log(i++);
+// });
+
+// imgs.forEach(() => i++);
+
+imgs.forEach((item, index) => {
+  console.log(item, index);
+});
+
+let i = 0;
+imgs.forEach(() => {
+  console.log(i++);
+});
+
+imgs.forEach(() => i++);

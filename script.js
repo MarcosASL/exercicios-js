@@ -135,3 +135,30 @@ var cachorrobom = {
 // 5 - Na função, extraia o href do elemento.
 // 6 - Verifique se o href é igual ao URL da página (document.location.href)
 // 7 - Se for igual mude o backgroundColor para black e a color para white do link.
+
+/*DOOM PARA INICIANTES O CURSO DE JAVASCRIPT COMPLETO E6 */
+
+// Retorne no console todas as imagens do site
+// Retorne no console apenas as imagens que começaram com a palavra imagem
+// Selecione todos os links internos (onde o href começa com #)
+// Selecione o primeiro h2 dentro de .animais-descricao
+// Selecione o último p do site
+
+/*------------------------------------------------------------------------- */
+
+// Mostre no console cada parágrado do site
+// Mostre o texto dos parágrafos no console 'só o texto'
+// Como corrigir os erros abaixo:const imgs = document.querySelectorAll('img');
+
+/*
+imgs.forEach(item, index => {
+  console.log(item, index);
+});
+
+let i = 0;
+imgs.forEach( => {
+  console.log(i++);
+});
+
+imgs.forEach(() => i++);
+*/
