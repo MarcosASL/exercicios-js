@@ -64,13 +64,19 @@ var cachorro = {
   },
 };
 
-/*NOMEIE 3 PROPRIEDADES OU MÉTODOS DE STRING*/
+/*NOMEIE 3 MÉTODOS OU PROPRIEDADES DE UM STRING*/
 var string = "Maquin";
 console.log(string.length);
 console.log(string.toLowerCase());
 console.log(string.match());
 
-/*NOMEIE 5 PROPRIEDADES OU MÉTODOS DE ELEMENTOS DO DOM*/
+/*NOMEIE 3 MÉTODOS OU PROPRIEDADES DE UM ARRAY*/
+var Videogames = ["switch", "ps4", "xbox"];
+Videogames.pop();
+Videogames.push("3DS");
+Videogames.length;
+
+/*NOMEIE 5  MÉTODOS OU PROPRIEDADES DE ELEMENTOS DO DOM*/
 var pegarh1 = document.querySelector("h1");
 var pegartodosp = document.querySelectorAll("p");
 var click = document.addEventListener("click", function () {
@@ -83,6 +89,9 @@ var PegaClasse = document.getElementsByClassName("contato");
 
 /*CRIE UMA ARRAY COM OS ANOS QUE O BRASIL GANHOU A COPA: 1959, 1962, 1970, 1994, 2002. INTERAJA COM A ARRAY UTILIZANDO UM LOOP PARA MOSTRAR NO CONSOLE A SEGUINTE MENSAGEM : " O BRASIL GANHOU A COPA DE ${ANO}" */
 var BrasilCopas = [1959, 1962, 1970, 1994, 2004];
+for (var i = 0; i < BrasilCopas.length; i++) {
+  console.log(`O Brasil Ganhou a copa de ${BrasilCopas[i]}`);
+}
 
 /*INTERAJA COM UM LOOP NAS FRUTAS ABAIXO E PARE AO CHEGAR EM PERA */
 

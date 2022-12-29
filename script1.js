@@ -70,13 +70,19 @@ var cachorro = {
 };
 // escreve: cachorro.Latir("Homem") R: Latir
 
-/*NOMEIE 3 PROPRIEDADES OU MÉTODOS DE STRING*/
+/*NOMEIE 3 MÉTODOS OU PROPRIEDADES DE UM STRING*/
 var nome3 = "Marcos";
 nome3.concat;
 nome3.endsWith;
 nome3.indexOf;
 
-/*NOMEIE 5 PROPRIEDADES OU MÉTODOS DE ELEMENTOS DO DOM*/
+/*NOMEIE 3 MÉTODOS OU PROPRIEDADES DE UM ARRAY*/
+var Videogames = ["switch", "ps4", "xbox"];
+Videogames.pop();
+Videogames.push("3DS");
+Videogames.length;
+
+/*NOMEIE 5 MÉTODOS OU PROPRIEDADES DE ELEMENTOS DO DOM*/
 var domelement = document.createElement("div");
 domelement.addEventListener;
 domelement.appendChild;
