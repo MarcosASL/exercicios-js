@@ -66,9 +66,9 @@ var cachorro = {
 
 /*NOMEIE 3 MÉTODOS OU PROPRIEDADES DE UM STRING*/
 var string = "Maquin";
-console.log(string.length);
-console.log(string.toLowerCase());
-console.log(string.match());
+// console.log(string.length);
+// console.log(string.toLowerCase());
+// console.log(string.match());
 
 /*NOMEIE 3 MÉTODOS OU PROPRIEDADES DE UM ARRAY*/
 var Videogames = ["switch", "ps4", "xbox"];
@@ -80,17 +80,17 @@ Videogames.length;
 var pegarh1 = document.querySelector("h1");
 var pegartodosp = document.querySelectorAll("p");
 var click = document.addEventListener("click", function () {
-  console.log("vc clicou BB");
+  // console.log("vc clicou BB");
 });
 var PegaID = document.getElementById("faq");
 var PegaClasse = document.getElementsByClassName("contato");
 
-/*--------------------------ARRAYS ELOOP---------------------------------*/
+/*---------------------ARRAYS E LOOP----------------------------*/
 
 /*CRIE UMA ARRAY COM OS ANOS QUE O BRASIL GANHOU A COPA: 1959, 1962, 1970, 1994, 2002. INTERAJA COM A ARRAY UTILIZANDO UM LOOP PARA MOSTRAR NO CONSOLE A SEGUINTE MENSAGEM : " O BRASIL GANHOU A COPA DE ${ANO}" */
 var BrasilCopas = [1959, 1962, 1970, 1994, 2004];
 for (var i = 0; i < BrasilCopas.length; i++) {
-  console.log(`O Brasil Ganhou a copa de ${BrasilCopas[i]}`);
+  // console.log(`O Brasil Ganhou a copa de ${BrasilCopas[i]}`);
 }
 
 /*INTERAJA COM UM LOOP NAS FRUTAS ABAIXO E PARE AO CHEGAR EM PERA */
@@ -103,6 +103,8 @@ for (var f = 0; f < frutas.length; f++) {
 }
 
 /*COLOQUE A ULTIMA FRUTA DA ARRAY EM UMA VARIAVEL SEM REMOVER A MESMA DA ARRAY */
+var ultimaFruta = frutas[frutas.length - 1];
+console.log(ultimaFruta);
 
 /*-------------------------ATRIBUIÇÃO E TERNÁRIO---------------------------------------*/
 /*SOME 500 AO VALOR DE SCROLL ABAIXO, ATRIBUINDO O NOVO VALOR A SCROLL */
