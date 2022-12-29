@@ -320,7 +320,7 @@ itensMenu[0].classList.add("ativo");
 const imgs = document.querySelectorAll("img");
 imgs.forEach((img) => {
   const possuiAtributo = img.hasAttribute("alt");
-  console.log(possuiAtributo);
+  console.log(img, possuiAtributo);
 });
 
 //modifique o href do link externo no menu
