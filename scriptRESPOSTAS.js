@@ -327,3 +327,5 @@ imgs.forEach((img) => {
 const link = document.querySelector('a[href^="http"]');
 link.setAttribute("href", "https://www.google.com/");
 console.log(link);
+
+/*------------------------------------------ */
