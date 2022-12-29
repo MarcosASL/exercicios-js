@@ -94,6 +94,13 @@ for (var i = 0; i < BrasilCopas.length; i++) {
 }
 
 /*INTERAJA COM UM LOOP NAS FRUTAS ABAIXO E PARE AO CHEGAR EM PERA */
+var frutas = ["banana", "maçã", "pera", "uva", "melância"];
+for (var f = 0; f < frutas.length; f++) {
+  console.log(frutas[f]);
+  if (frutas[f] === "pera") {
+    break;
+  }
+}
 
 /*COLOQUE A ULTIMA FRUTA DA ARRAY EM UMA VARIAVEL SEM REMOVER A MESMA DA ARRAY */
 
