@@ -129,6 +129,8 @@ var retornaurl = window.location.href;
 console.log(retornaurl);
 
 /*SELECIONE O PRIMEIRO ELEMENTO DA PÁGINA QUE POSSUA A CLASSE ATIVO */
+var primeiroelemento = document.querySelector(".ativo");
+console.log(primeiroelemento);
 
 /*RETORNE A LINGUAGEM DO NAVEGADOR */
 
