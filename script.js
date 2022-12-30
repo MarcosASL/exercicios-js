@@ -125,6 +125,8 @@ console.log(darcredito);
 
 /*----------------------------------DOOM-------------------------------- */
 /*RETORNE O URL DA PÁGINA ATUAL UTILIZANDO O OBJETO WINDOW */
+var retornaurl = window.location.href;
+console.log(retornaurl);
 
 /*SELECIONE O PRIMEIRO ELEMENTO DA PÁGINA QUE POSSUA A CLASSE ATIVO */
 
