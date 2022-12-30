@@ -108,6 +108,11 @@ console.log(ultimaFruta);
 
 /*-------------------------ATRIBUIÇÃO E TERNÁRIO---------------------------------------*/
 /*SOME 500 AO VALOR DE SCROLL ABAIXO, ATRIBUINDO O NOVO VALOR A SCROLL */
+var ValorScroll = n;
+
+
+  += 500
+
 
 /*ATRIBUA TRUE  PARA A VARIAVEL DARCREDITO, CASO O CLIENTE POSSUA CARRO E CASA, E FALSE CASO CONTRÁRIO */
 
