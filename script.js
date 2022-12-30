@@ -190,8 +190,6 @@ if (botao) {
   botao.addEventListener("click", Somarbotao);
 }
 
-// console.log(div);
-
 /*----------------------------------------------------------------------------------- */
 
 // 1 - Adicione uma navegação (nav) com 3 links: ./, ./produto.html e ./contato.html
@@ -214,9 +212,10 @@ if (botao) {
 
 // Mostre no console cada parágrado do site
 // Mostre o texto dos parágrafos no console 'só o texto'
-// Como corrigir os erros abaixo:const imgs = document.querySelectorAll('img');
+// Como corrigir os erros abaixo:
 
-/*
+/*const imgs = document.querySelectorAll('img');
+
 imgs.forEach(item, index => {
   console.log(item, index);
 });
@@ -228,8 +227,7 @@ imgs.forEach( => {
 
 imgs.forEach(() => i++);
 */
-
-/*----------------------------------------------------- */
+/*------------------JÁ FAZ PARTE DAS NOVA AULAS------------------------ */
 
 // Adicione a classe ativo a todos os itens do menu
 
@@ -238,21 +236,30 @@ imgs.forEach(() => i++);
 // Verifique se as imagens possuem o atributo alt
 
 // Modifique o href do link externo no menu
+////////////////////////////////////////////////////////////////////////////////
 
-/*----------------------------------------------------- */
-
-// Verifique a distância da primeira imagem
-
-// em relação ao topo da página
+// Verifique a distância da primeira imagem em relação ao topo da página
 
 // Retorne a soma da largura de todas as imagens
 
-// Verifique se os links da página possuem
+// Verifique se os links da página possuem o mínimo recomendado para telas utilizadas  com o dedo. (48px/48px de acordo com o google)
 
-// o mínimo recomendado para telas utilizadas
+// Se o browser for menor que 720px, dicione a classe menu-mobile ao menu a
+////////////////////////////////////////////////////////////////////////////////
 
-// com o dedo. (48px/48px de acordo com o google)
+/* Quando o usuário clicar nos links internos do site,
+adicione a classe ativo ao item clicado e remova dos
+demais itens caso eles possuam a mesma. Previna
+ o comportamento padrão desses links */
 
-// Se o browser for menor que 720px,
+/* Selecione todos os elementos do site começando a partir do body,
+ ao clique mostre exatamente quais elementos estão sendo clicados */
 
-// adicione a classe menu-mobile ao menu
+/* Utilizando o código anterior, ao invés de mostrar no console,
+remova o elemento que está sendo clicado, o método remove() remove um elemento.*/
+
+/* Se o usuário clicar na tecla (t), aumente todo o texto do site.
+(crie no css o estilo html.'nomedaclasse' e bota a font-size sendo grande) */
+
+////////////////////////////////////////////////////////////////////////////////
+/*-------------------------TEM RESPOSTA---------------------------- */

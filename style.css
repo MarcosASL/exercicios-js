@@ -24,6 +24,10 @@ img {
   display: block;
   max-width: 100%;
 }
+/*! esquema de aumentar a font*/
+html.textomaior {
+  font-size: 150%;
+}
 
 ul {
   list-style: none;
