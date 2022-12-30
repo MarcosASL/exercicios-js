@@ -133,8 +133,12 @@ var primeiroelemento = document.querySelector(".ativo");
 console.log(primeiroelemento);
 
 /*RETORNE A LINGUAGEM DO NAVEGADOR */
+var linguanav = window.navigator.language;
+console.log(linguanav);
 
 /*RETORNE A LARGURA DA JANELA */
+var janelalarg = window.innerWidth;
+console.log(janelalarg);
 
 // 1 - Crie uma função (livro) que possui 3 parâmetros: nome, ano e autor.
 // 2 - No corpo da função:
