@@ -164,10 +164,8 @@ function passamouse(event) {
   circulo.style.top = event.y + "px";
   circulo.style.left = event.x + "px";
 }
-window.addEventListener("mousehidden", passamouse);
 window.addEventListener("mousemove", passamouse);
 
-// console.log(circulo);
 /*----------------------------------------------------------------------------------- */
 
 /*1 - Crie um botão com nome de Adicionar.
@@ -178,6 +176,21 @@ window.addEventListener("mousemove", passamouse);
 6 - Mude o valor da div para o novo total.
 7 - Mude o valor apenas se o total for menor que 10.
 8 - Quando não for mais possível adicionar, mostre uma mensagem no console. */
+const botao = document.querySelector("button");
+function Somarbotao() {
+  const div = document.querySelector("#div-zero");
+  const soma = Number(div.innerText) + 1;
+  if (soma < 10) {
+    div.innerText = soma;
+  } else {
+    console.log("Não foi possivel adicionar mais");
+  }
+}
+if (botao) {
+  botao.addEventListener("click", Somarbotao);
+}
+
+// console.log(div);
 
 /*----------------------------------------------------------------------------------- */
 

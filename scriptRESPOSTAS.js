@@ -216,7 +216,6 @@ window.addEventListener("mousemove", seguirmouse);
 8 - Quando não for mais possível adicionar, mostre uma mensagem no console. */
 
 const botao = document.querySelector("#b-botao");
-
 function somar() {
   const div = document.querySelector("#div-zero");
   const total = Number(div.innerText) + 1;
