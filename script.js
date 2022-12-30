@@ -159,6 +159,15 @@ console.log(janelalarg);
 // 3 - Na função mude as propriedades top e left do círculo com base no mouse.
 // 4 - Você pode usar elemento.style.propriedade para mudar o CSS diretamente.
 
+const circulo = document.querySelector(".circulo");
+function passamouse(event) {
+  circulo.style.top = event.y + "px";
+  circulo.style.left = event.x + "px";
+}
+window.addEventListener("mousehidden", passamouse);
+window.addEventListener("mousemove", passamouse);
+
+// console.log(circulo);
 /*----------------------------------------------------------------------------------- */
 
 /*1 - Crie um botão com nome de Adicionar.
