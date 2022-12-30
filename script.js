@@ -107,13 +107,10 @@ var ultimaFruta = frutas[frutas.length - 1];
 console.log(ultimaFruta);
 
 /*-------------------------ATRIBUIÇÃO E TERNÁRIO---------------------------------------*/
-/*SOME 500 AO VALOR DE SCROLL ABAIXO, ATRIBUINDO O NOVO VALOR A SCROLL */
-var ValorScroll = n;
-
-
-  += 500
-
-
+/*SOME 500 AO VALOR DE SCROLL ABAIXO, ATRIBUINDO O NOVO VALOR A SCROLL var scroll = 1000; */
+var Scroll = 1000;
+scroll += 500;
+console.log(scroll);
 /*ATRIBUA TRUE  PARA A VARIAVEL DARCREDITO, CASO O CLIENTE POSSUA CARRO E CASA, E FALSE CASO CONTRÁRIO */
 
 /*-----------------------------------------------------------------------------------------*/
