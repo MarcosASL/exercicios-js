@@ -111,8 +111,16 @@ console.log(ultimaFruta);
 var Scroll = 1000;
 scroll += 500;
 console.log(scroll);
-/*ATRIBUA TRUE  PARA A VARIAVEL DARCREDITO, CASO O CLIENTE POSSUA CARRO E CASA, E FALSE CASO CONTRÁRIO */
 
+/*ATRIBUA TRUE  PARA A VARIAVEL DARCREDITO, CASO O CLIENTE POSSUA CARRO E CASA, E FALSE CASO CONTRÁRIO
+var possuicarro = true;
+var possuicasa = true;
+var darcredito */
+var possuicarro = true;
+var possuicasa = true;
+var darcredito =
+  possuicarro && possuicasa === true ? "dar crédito" : "não dar crédito";
+console.log(darcredito);
 /*-----------------------------------------------------------------------------------------*/
 
 /*----------------------------------DOOM-------------------------------- */
