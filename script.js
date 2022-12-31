@@ -199,6 +199,17 @@ if (botao) {
 // 5 - Na função, extraia o href do elemento.
 // 6 - Verifique se o href é igual ao URL da página (document.location.href)
 // 7 - Se for igual mude o backgroundColor para black e a color para white do link.
+const links = document.querySelectorAll(".nav-doida a");
+function ativarLink(link) {
+  const href = link.href;
+  const url = document.location.href;
+  if (href === url) {
+    link.style.backgroundColor = "black";
+    link.style.color = "white";
+  }
+}
+links.forEach(ativarLink);
+// console.log(links);
 
 /*DOOM PARA INICIANTES O CURSO DE JAVASCRIPT COMPLETO E6 */
 
