@@ -229,8 +229,18 @@ console.log(ultimoP[ultimoP.length - 1]);
 
 /*------------------------------------------------------------------------- */
 
-// Mostre no console cada parágrado do site
+// Mostre no console cada paragrafo do site "aquele esquema exibe detalhado o objeto no console"
+const cadaparagrafo = document.querySelectorAll("p");
+cadaparagrafo.forEach((item) => {
+  // console.log(item);
+});
+
 // Mostre o texto dos parágrafos no console 'só o texto'
+const textoparagrafo = document.querySelectorAll("p");
+textoparagrafo.forEach((item) => {
+  // console.log(item);
+});
+
 // Como corrigir os erros abaixo:
 
 /*const imgs = document.querySelectorAll('img');
