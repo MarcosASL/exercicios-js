@@ -299,7 +299,7 @@ imgs.forEach((item, index) => {
   console.log(item, index);
 });
 
-let i = 0;
+let item = 0;
 imgs.forEach(() => {
   console.log(i++);
 });

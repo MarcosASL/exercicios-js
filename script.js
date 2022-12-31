@@ -256,6 +256,20 @@ imgs.forEach( => {
 
 imgs.forEach(() => i++);
 */
+const imgs = document.querySelectorAll("img");
+
+imgs.forEach((item, index) => {
+  console.log(item, index);
+});
+
+let item = 0;
+imgs.forEach(() => {
+  console.log(i++);
+});
+
+imgs.forEach(() => i++);
+/////////////////////////////////
+
 /*------------------JÁ FAZ PARTE DAS NOVA AULAS------------------------ */
 
 // Adicione a classe ativo a todos os itens do menu
