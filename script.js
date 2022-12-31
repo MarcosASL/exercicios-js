@@ -209,15 +209,23 @@ function ativarLink(link) {
   }
 }
 links.forEach(ativarLink);
-// console.log(links);
 
 /*DOOM PARA INICIANTES O CURSO DE JAVASCRIPT COMPLETO E6 */
 
 // Retorne no console todas as imagens do site
+const allimagens = document.querySelectorAll("img");
+
 // Retorne no console apenas as imagens que começaram com a palavra imagem
+const imagensComeca = document.querySelectorAll('img[src^="./img/imagem"]');
 // Selecione todos os links internos (onde o href começa com #)
+const linksinterno = document.querySelectorAll('[href^="#"]');
+
 // Selecione o primeiro h2 dentro de .animais-descricao
+const primeiroH2 = document.querySelector(".animais-descricao h2");
 // Selecione o último p do site
+const ultimoP = document.querySelectorAll("p");
+// console.log(ultimoP[ultimoP.length] - 1);
+console.log(ultimoP[ultimoP.length - 1]);
 
 /*------------------------------------------------------------------------- */
 
