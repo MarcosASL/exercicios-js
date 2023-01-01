@@ -305,4 +305,13 @@ remova o elemento que está sendo clicado, o método remove() remove um elemento
 (crie no css o estilo html.'nomedaclasse' e bota a font-size sendo grande) */
 
 ////////////////////////////////////////////////////////////////////////////////
-/*-------------------------TEM RESPOSTA---------------------------- */
+/*-------------------------Traversing e Manipulação---------------------------- */
+// Duplique o menu e adicione ele em copy
+
+////////////////////////////////////////////////////////////////////////////////
+// Selecione o primeiro DT da dl de Faq
+////////////////////////////////////////////////////////////////////////////////
+// Selecione o DD referente ao primeiro DT (dd é tag de descrição após o dt)
+
+//////////////////////////////////////////////////////////////////////////////////
+// Substitua o conteúdo html de .faq pelo de .animais
