@@ -290,6 +290,9 @@ imgs2.forEach((img) => {
   console.log(img, possuiAtributo);
 });
 // Modifique o href do link externo no menu
+const link = document.querySelector('a[href^="http"]');
+link.setAttribute("href", "https://www.google.com/");
+console.log(link);
 ////////////////////////////////////////////////////////////////////////////////
 
 // Verifique a distância da primeira imagem em relação ao topo da página
