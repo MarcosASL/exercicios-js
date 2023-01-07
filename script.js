@@ -300,7 +300,12 @@ const img = document.querySelector("img");
 const imgTop = img.offsetTop;
 console.log(imgTop);
 // Retorne a soma da largura de todas as imagens
-
+const imagens = document.querySelectorAll("img");
+let soma = 0;
+imagens.forEach((imagem) => {
+  soma += imagem.offsetHeight;
+});
+console.log(soma);
 // Verifique se os links da página possuem o mínimo recomendado para telas utilizadas  com o dedo. (48px/48px de acordo com o google)
 
 // Se o browser for menor que 720px, dicione a classe menu-mobile ao menu a
