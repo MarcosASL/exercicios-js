@@ -60,7 +60,7 @@ var meusDados = {
 meusDados.nomecompleto = function () {
   return `${this.nome}  ${this.sobrenome}`;
 };
-// console.log(meusDados.nomecompleto());
+console.log(meusDados.nomecompleto());
 
 /*CRIE UM OBJETO CACHORRO QUE REPRESENTE UM LABRADOR, PRETO COM 10 ANOS, QUE LATE AO VER UM HOMEM */
 var cachorro = {
@@ -307,6 +307,16 @@ imagens.forEach((imagem) => {
 });
 console.log(soma);
 // Verifique se os links da página possuem o mínimo recomendado para telas utilizadas  com o dedo. (48px/48px de acordo com o google)
+const links1 = document.querySelectorAll("a");
+links1.forEach((link) => {
+  const linkWidth = link.offsetWidth;
+  const linkHeight = link.offsetHeight;
+  if (linkWidth >= 48 && linkHeight <= 48) {
+    console.log(link, "possui boa acessibilidade");
+  } else {
+    console.log(link, "Não possui boa acessibilidade");
+  }
+});
 
 // Se o browser for menor que 720px, dicione a classe menu-mobile ao menu a
 ////////////////////////////////////////////////////////////////////////////////
