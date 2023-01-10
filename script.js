@@ -13,6 +13,14 @@ function nesobrenome(nome, sobrenome) {
 }
 
 /*CRIE UMA FUNCTION QUE VERIFICA SE UM NÚMERO É PAR (use modulo %)*/
+function parounaum(n) {
+  var modulo = n % 2;
+  if (modulo === 0) {
+    return "é par";
+  } else {
+    return "é impar";
+  }
+}
 
 /*CRIAR FUNCTION QUE RETORNE O TIPO DE DADO DO ARGUMENTO PASSADO NELA (typeof)*/
 
