@@ -1,37 +1,17 @@
 /*------------------------------FUNCTION------------------------------------------ */
 /*Crie uma function para verificar se um valor é true*/
-function trueounaobicho(verifica) {
-  return !!verifica;
+function verificatrue(valor) {
+  return !!valor;
 }
 /*Crie uma function matemática que retorne o perímetro de um quadrado, obs: perímetro é a soma dos quatro lados do quadrado*/
-function quadradop(lado) {
-  return lado * 4;
-}
 
 /*Crie uma function que retorne seu Nome completo, ela deve possuir o parâmetros: nome e sobrenome*/
-function meunomecompleto(nome, sobrenome) {
-  return `${nome} ${sobrenome}`;
-}
 
 /*CRIE UMA FUNCTION QUE VERIFICA SE UM NÚMERO É PAR (use modulo %)*/
-function parouimpar(n) {
-  var modulo = n % 2;
-  if (modulo === 0) {
-    return "é par papai";
-  } else {
-    return "é impar papai";
-  }
-}
 
 /*CRIAR FUNCTION QUE RETORNE O TIPO DE DADO DO ARGUMENTO PASSADO NELA (typeof)*/
-function qualDado(item) {
-  return typeof item;
-}
 
 /*addEventListerner é uma function nativa do JS, o primeiro parametro é o evento que ocorre e o segundo é a callback, utilize essa function para mostrar no console o seu nome completo quando o evento 'scroll' ocorrer */
-addEventListener("scroll", function () {
-  // console.log("marcos antonio da silva lima");
-});
 
 // 1 - Crie uma função (livro) que possui 3 parâmetros: nome, ano e autor.
 // 2 - No corpo da função:
@@ -50,121 +30,53 @@ addEventListener("scroll", function () {
 /*--------------------------------OBJETOS-------------------------------------------------*/
 
 /*Crie um objeto com os seus dados pessoais. Deve possuir pelo menos duas propriedades = nome e sobrenome */
-var meusDados = {
-  nome: "marcos",
-  sobrenome: "lima",
-  idade: 30 + " anos",
-};
 
 /*CRIE UM MÉTODO NO OBJETO ANTERIOR QUE MOSTRE O SEU NOME COMPLETO */
-meusDados.nomecompleto = function () {
-  return `${this.nome}  ${this.sobrenome}`;
-};
-console.log(meusDados.nomecompleto());
 
 /*CRIE UM OBJETO CACHORRO QUE REPRESENTE UM LABRADOR, PRETO COM 10 ANOS, QUE LATE AO VER UM HOMEM */
-var cachorro = {
-  raça: "labrador",
-  cor: "preto",
-  idade: 10 + " anos",
-  verpessoa: true,
-  Latir(pessoa) {
-    if (pessoa === "Homem") {
-      return "Latir";
-    } else {
-      return "Não Latir";
-    }
-  },
-};
 
 /*NOMEIE 3 MÉTODOS OU PROPRIEDADES DE UM STRING*/
-var string = "Maquin";
+
 // console.log(string.length);
 // console.log(string.toLowerCase());
 // console.log(string.match());
 
 /*NOMEIE 3 MÉTODOS OU PROPRIEDADES DE UM ARRAY*/
-var Videogames = ["switch", "ps4", "xbox"];
-Videogames.pop();
-Videogames.push("3DS");
-Videogames.length;
 
 /*NOMEIE 5  MÉTODOS OU PROPRIEDADES DE ELEMENTOS DO DOM*/
-var pegarh1 = document.querySelector("h1");
-var pegartodosp = document.querySelectorAll("p");
-var click = document.addEventListener("click", function () {
-  // console.log("vc clicou BB");
-});
-var PegaID = document.getElementById("faq");
-var PegaClasse = document.getElementsByClassName("contato");
 
 /*---------------------ARRAYS E LOOP----------------------------*/
 
 /*CRIE UMA ARRAY COM OS ANOS QUE O BRASIL GANHOU A COPA: 1959, 1962, 1970, 1994, 2002. INTERAJA COM A ARRAY UTILIZANDO UM LOOP PARA MOSTRAR NO CONSOLE A SEGUINTE MENSAGEM : " O BRASIL GANHOU A COPA DE ${ANO}" */
-var BrasilCopas = [1959, 1962, 1970, 1994, 2004];
-for (var i = 0; i < BrasilCopas.length; i++) {
-  // console.log(`O Brasil Ganhou a copa de ${BrasilCopas[i]}`);
-}
 
 /*INTERAJA COM UM LOOP NAS FRUTAS ABAIXO E PARE AO CHEGAR EM PERA */
-var frutas = ["banana", "maçã", "pera", "uva", "melância"];
-for (var f = 0; f < frutas.length; f++) {
-  console.log(frutas[f]);
-  if (frutas[f] === "pera") {
-    break;
-  }
-}
 
 /*COLOQUE A ULTIMA FRUTA DA ARRAY EM UMA VARIAVEL SEM REMOVER A MESMA DA ARRAY */
-var ultimaFruta = frutas[frutas.length - 1];
-console.log(ultimaFruta);
 
 /*-------------------------ATRIBUIÇÃO E TERNÁRIO---------------------------------------*/
 /*SOME 500 AO VALOR DE SCROLL ABAIXO, ATRIBUINDO O NOVO VALOR A SCROLL var scroll = 1000; */
-var Scroll = 1000;
-scroll += 500;
-console.log(scroll);
 
 /*ATRIBUA TRUE  PARA A VARIAVEL DARCREDITO, CASO O CLIENTE POSSUA CARRO E CASA, E FALSE CASO CONTRÁRIO
 var possuicarro = true;
 var possuicasa = true;
 var darcredito */
-var possuicarro = true;
-var possuicasa = true;
-var darcredito =
-  possuicarro && possuicasa === true ? "dar crédito" : "não dar crédito";
-console.log(darcredito);
+
 /*-----------------------------------------------------------------------------------------*/
 
 /*----------------------------------DOOM-------------------------------- */
 /*RETORNE O URL DA PÁGINA ATUAL UTILIZANDO O OBJETO WINDOW */
-var retornaurl = window.location.href;
-console.log(retornaurl);
 
 /*SELECIONE O PRIMEIRO ELEMENTO DA PÁGINA QUE POSSUA A CLASSE ATIVO */
-var primeiroelemento = document.querySelector(".ativo");
-console.log(primeiroelemento);
 
 /*RETORNE A LINGUAGEM DO NAVEGADOR */
-var linguanav = window.navigator.language;
-console.log(linguanav);
 
 /*RETORNE A LARGURA DA JANELA */
-var janelalarg = window.innerWidth;
-console.log(janelalarg);
 
 /*----------------------------------------------------------------------------------- */
 // 1 - Crie um círculo com uma div de width: 16px, height: 16px e background: #999;
 // 2 - Adicione ao window uma função que ocorre ao "mousemove";
 // 3 - Na função mude as propriedades top e left do círculo com base no mouse.
 // 4 - Você pode usar elemento.style.propriedade para mudar o CSS diretamente.
-
-const circulo = document.querySelector(".circulo");
-function passamouse(event) {
-  circulo.style.top = event.y + "px";
-  circulo.style.left = event.x + "px";
-}
-window.addEventListener("mousemove", passamouse);
 
 /*----------------------------------------------------------------------------------- */
 
@@ -176,19 +88,6 @@ window.addEventListener("mousemove", passamouse);
 6 - Mude o valor da div para o novo total.
 7 - Mude o valor apenas se o total for menor que 10.
 8 - Quando não for mais possível adicionar, mostre uma mensagem no console. */
-const botao = document.querySelector("button");
-function Somarbotao() {
-  const div = document.querySelector("#div-zero");
-  const soma = Number(div.innerText) + 1;
-  if (soma < 10) {
-    div.innerText = soma;
-  } else {
-    console.log("Não foi possivel adicionar mais");
-  }
-}
-if (botao) {
-  botao.addEventListener("click", Somarbotao);
-}
 
 /*----------------------------------------------------------------------------------- */
 
@@ -199,47 +98,24 @@ if (botao) {
 // 5 - Na função, extraia o href do elemento.
 // 6 - Verifique se o href é igual ao URL da página (document.location.href)
 // 7 - Se for igual mude o backgroundColor para black e a color para white do link.
-const links = document.querySelectorAll(".nav-doida a");
-function ativarLink(link) {
-  const href = link.href;
-  const url = document.location.href;
-  if (href === url) {
-    link.style.backgroundColor = "black";
-    link.style.color = "white";
-  }
-}
-links.forEach(ativarLink);
 
 /*DOOM PARA INICIANTES O CURSO DE JAVASCRIPT COMPLETO E6 */
 
 // Retorne no console todas as imagens do site
-const allimagens = document.querySelectorAll("img");
 
 // Retorne no console apenas as imagens que começaram com a palavra imagem
-const imagensComeca = document.querySelectorAll('img[src^="./img/imagem"]');
+
 // Selecione todos os links internos (onde o href começa com #)
-const linksinterno = document.querySelectorAll('[href^="#"]');
 
 // Selecione o primeiro h2 dentro de .animais-descricao
-const primeiroH2 = document.querySelector(".animais-descricao h2");
+
 // Selecione o último p do site
-const ultimoP = document.querySelectorAll("p");
-// console.log(ultimoP[ultimoP.length] - 1);
-console.log(ultimoP[ultimoP.length - 1]);
 
 /*------------------------------------------------------------------------- */
 
 // Mostre no console cada paragrafo do site "aquele esquema exibe detalhado o objeto no console"
-const cadaparagrafo = document.querySelectorAll("p");
-cadaparagrafo.forEach((item) => {
-  // console.log(item);
-});
 
 // Mostre o texto dos parágrafos no console 'só o texto'
-const textoparagrafo = document.querySelectorAll("p");
-textoparagrafo.forEach((item) => {
-  // console.log(item);
-});
 
 // Como corrigir os erros abaixo:
 
@@ -256,74 +132,29 @@ imgs.forEach( => {
 
 imgs.forEach(() => i++);
 */
-const imgs = document.querySelectorAll("img");
 
-imgs.forEach((item, index) => {
-  console.log(item, index);
-});
-
-let item = 0;
-imgs.forEach(() => {
-  console.log(i++);
-});
-
-imgs.forEach(() => i++);
 /////////////////////////////////
 
 /*------------------JÁ FAZ PARTE DAS NOVA AULAS------------------------ */
 
 // Adicione a classe ativo a todos os itens do menu
-const itensMenu = document.querySelectorAll(".menu a");
-itensMenu.forEach((item) => {
-  item.classList.add("ativo");
-});
 
 // Remove a classe ativo de todos os itens do menu e mantenha apenas no primeiro
-itensMenu.forEach((item) => {
-  item.classList.remove("ativo");
-});
-itensMenu[0].classList.add("ativo");
+
 // Verifique se as imagens possuem o atributo alt
-const imgs2 = document.querySelectorAll("img");
-imgs2.forEach((img) => {
-  const possuiAtributo = img.hasAttribute("alt");
-  console.log(img, possuiAtributo);
-});
+
 // Modifique o href do link externo no menu
-const link = document.querySelector('a[href^="http"]');
-link.setAttribute("href", "https://www.google.com/");
-console.log(link);
+
 ////////////////////////////////////////////////////////////////////////////////
 
 // Verifique a distância da primeira imagem em relação ao topo da página
-const img = document.querySelector("img");
-const imgTop = img.offsetTop;
-console.log(imgTop);
+
 // Retorne a soma da largura de todas as imagens
-const imagens = document.querySelectorAll("img");
-let soma = 0;
-imagens.forEach((imagem) => {
-  soma += imagem.offsetHeight;
-});
-console.log(soma);
+
 // Verifique se os links da página possuem o mínimo recomendado para telas utilizadas  com o dedo. (48px/48px de acordo com o google)
-const links1 = document.querySelectorAll("a");
-links1.forEach((link) => {
-  const linkWidth = link.offsetWidth;
-  const linkHeight = link.offsetHeight;
-  if (linkWidth >= 48 && linkHeight <= 48) {
-    console.log(link, "possui boa acessibilidade");
-  } else {
-    console.log(link, "Não possui boa acessibilidade");
-  }
-});
 
 // Se o browser for menor que 720px, dicione a classe menu-mobile ao menu a
-const browserSmall = window.matchMedia("(max-width: 720px)").matches;
-if (browserSmall) {
-  const menu = document.querySelector(".meu");
-  menu.classList.add("menu-mobile");
-}
+
 ////////////////////////////////////////////////////////////////////////////////
 
 /* Quando o usuário clicar nos links internos do site,
