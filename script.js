@@ -62,16 +62,20 @@ console.log(retornartudo.frase);
 /*--------------------------------OBJETOS-------------------------------------------------*/
 
 /*Crie um objeto com os seus dados pessoais. Deve possuir pelo menos duas propriedades = nome e sobrenome */
-var dadospessoais = {
+const dadospessoais = {
   nome: "marcos",
   sobrenome: "lima",
+  corFavorita: "azul",
+  pet: "gato",
+  nomedoPet: "Chelinha",
 };
 // console.log(dadospessoais);
+
 /*CRIE UM MÉTODO NO OBJETO ANTERIOR QUE MOSTRE O SEU NOME COMPLETO */
-dadospessoais.nometodo = function () {
-  return `${this.nome} ${this.sobrenome}`;
+dadospessoais.nomecompleto = function () {
+  return `${dadospessoais.nome} ${dadospessoais.sobrenome} e ${dadospessoais.nomedoPet}`;
 };
-console.log(dadospessoais.nometodo());
+console.log(dadospessoais.nomecompleto());
 
 /*CRIE UM OBJETO CACHORRO QUE REPRESENTE UM LABRADOR, PRETO COM 10 ANOS, QUE LATE AO VER UM HOMEM */
 
