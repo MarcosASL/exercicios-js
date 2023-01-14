@@ -13,6 +13,14 @@ function nomeTodo(nome, sobrenome) {
 }
 
 /*CRIE UMA FUNCTION QUE VERIFICA SE UM NÚMERO É PAR (use modulo %)*/
+function parouimpar(n) {
+  var modulo = n % 2;
+  if (modulo === 0) {
+    return "é Par, meu rei";
+  } else {
+    return "é impar, meu chefe";
+  }
+}
 
 /*CRIAR FUNCTION QUE RETORNE O TIPO DE DADO DO ARGUMENTO PASSADO NELA (typeof)*/
 
