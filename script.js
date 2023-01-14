@@ -4,7 +4,9 @@ function trueCheck(valor) {
   return !!valor;
 }
 /*Crie uma function matemática que retorne o perímetro de um quadrado, obs: perímetro é a soma dos quatro lados do quadrado*/
-
+function perimetro(lado) {
+  return lado * 4;
+}
 /*Crie uma function que retorne seu Nome completo, ela deve possuir o parâmetros: nome e sobrenome*/
 
 /*CRIE UMA FUNCTION QUE VERIFICA SE UM NÚMERO É PAR (use modulo %)*/
