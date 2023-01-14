@@ -1,35 +1,17 @@
 /*------------------------------FUNCTION------------------------------------------ */
 /*Crie uma function para verificar se um valor é true*/
-function verificatrue(valor) {
+function trueCheck(valor) {
   return !!valor;
 }
 /*Crie uma function matemática que retorne o perímetro de um quadrado, obs: perímetro é a soma dos quatro lados do quadrado*/
-function perimetro(lado) {
-  return lado * 4;
-}
+
 /*Crie uma function que retorne seu Nome completo, ela deve possuir o parâmetros: nome e sobrenome*/
-function nesobrenome(nome, sobrenome) {
-  return `${nome} ${sobrenome}`;
-}
 
 /*CRIE UMA FUNCTION QUE VERIFICA SE UM NÚMERO É PAR (use modulo %)*/
-function parounaum(n) {
-  var modulo = n % 2;
-  if (modulo === 0) {
-    return "é par";
-  } else {
-    return "é impar";
-  }
-}
 
 /*CRIAR FUNCTION QUE RETORNE O TIPO DE DADO DO ARGUMENTO PASSADO NELA (typeof)*/
-function tipodedado(dado) {
-  return typeof dado;
-}
+
 /*addEventListerner é uma function nativa do JS, o primeiro parametro é o evento que ocorre e o segundo é a callback, utilize essa function para mostrar no console o seu nome completo quando o evento 'scroll' ocorrer */
-addEventListener("scroll", function () {
-  console.log("Marcos barbao");
-});
 
 // 1 - Crie uma função (livro) que possui 3 parâmetros: nome, ano e autor.
 // 2 - No corpo da função:
@@ -42,19 +24,7 @@ addEventListener("scroll", function () {
 //     'O Senhor dos Anéis', 1954, 'J. R. R. Tolkien'
 // 5 - Guarde o retorno da função executada em uma variável.
 // 6 - Log a frase final da função executada no console.
-function livro(nome, ano, autor) {
-  const NomeMaior = nome.toUpperCase();
-  const TotalAnos = ano - 2050;
-  const frase = nome + " por " + autor;
-  const objeto = {
-    nome: NomeMaior,
-    TotalAnos,
-    frase,
-  };
-  return objeto;
-}
-const retornotudo = livro("O Senhor dos Anéis", 1954, "J. R. R. Tolkien");
-console.log(retornotudo.frase);
+
 /*---------------------------------------------------------------------------------*/
 
 /*--------------------------------OBJETOS-------------------------------------------------*/
