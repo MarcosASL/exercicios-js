@@ -44,19 +44,20 @@ addEventListener("scroll", function () {
 //     'O Senhor dos Anéis', 1954, 'J. R. R. Tolkien'
 // 5 - Guarde o retorno da função executada em uma variável.
 // 6 - Log a frase final da função executada no console.
-function livro(nome, ano, autor) {
-  const nomemaior = nome.toUpperCase();
-  const anoslancamento = ano - 2050;
+function Livro(nome, ano, autor) {
+  const nomegrande = nome.toUpperCase();
+  const totalanos = ano - 2050;
   const frase = nome + " por " + autor;
-  const objetoaqui = {
-    nome: nomemaior,
-    anoslancamento,
+  const objeto = {
+    nome: nomegrande,
+    totalanos,
     frase,
   };
-  return objetoaqui;
+  return objeto;
 }
-const retornartudo = livro("O Senhor dos Anéis", 1954, "J. R. R. Tolkien");
-console.log(retornartudo.frase);
+const retorno = Livro("O Senhor dos Anéis", 1954, "J. R. R. Tolkien");
+
+console.log(retorno.frase);
 /*---------------------------------------------------------------------------------*/
 
 /*--------------------------------OBJETOS-------------------------------------------------*/
@@ -75,9 +76,22 @@ const dadospessoais = {
 dadospessoais.nomecompleto = function () {
   return `${dadospessoais.nome} ${dadospessoais.sobrenome} e ${dadospessoais.nomedoPet}`;
 };
-console.log(dadospessoais.nomecompleto());
+// console.log(dadospessoais.nomecompleto());
 
 /*CRIE UM OBJETO CACHORRO QUE REPRESENTE UM LABRADOR, PRETO COM 10 ANOS, QUE LATE AO VER UM HOMEM */
+var cachorro = {
+  raça: "Labrador",
+  cor: "preto",
+  idade: 10 + " anos",
+  TemHomemNarua: true,
+  Latir(pessoa) {
+    if (pessoa === "Homem") {
+      return "Latir";
+    } else {
+      return "NãoLatir";
+    }
+  },
+};
 
 /*NOMEIE 3 MÉTODOS OU PROPRIEDADES DE UM STRING*/
 
