@@ -112,18 +112,22 @@ for (var anos = 0; anos < Brasilcampeao.length; anos++) {
 /*INTERAJA COM UM LOOP NAS FRUTAS ABAIXO E PARE AO CHEGAR EM PERA */
 // var frutas = ["banana", "maçã", "pera", "uva", "melância"];
 var frutas = ["banana", "maçã", "pera", "uva", "melância"];
-for (var i = 0; i < frutas.length; i++) {
-  console.log(frutas[i]);
-  if (frutas[i] === "pera") {
+for (var fruta = 0; fruta < frutas.length; fruta++) {
+  // console.log(frutas[fruta]);
+  if (frutas[fruta] === "pera") {
     break;
   }
 }
 
 /*COLOQUE A ULTIMA FRUTA DA ARRAY EM UMA VARIAVEL SEM REMOVER A MESMA DA ARRAY */
 var ultimafruta = frutas[frutas.length - 1];
-console.log(ultimafruta);
+// console.log(ultimafruta);
+
 /*-------------------------ATRIBUIÇÃO E TERNÁRIO---------------------------------------*/
 /*SOME 500 AO VALOR DE SCROLL ABAIXO, ATRIBUINDO O NOVO VALOR A SCROLL var scroll = 1000; */
+var scroll = 1000;
+scroll += 500;
+console.log(scroll);
 
 /*ATRIBUA TRUE  PARA A VARIAVEL DARCREDITO, CASO O CLIENTE POSSUA CARRO E CASA, E FALSE CASO CONTRÁRIO
 var possuicarro = true;
