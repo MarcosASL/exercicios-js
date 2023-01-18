@@ -44,13 +44,26 @@ addEventListener("scroll", function () {
 //     'O Senhor dos Anéis', 1954, 'J. R. R. Tolkien'
 // 5 - Guarde o retorno da função executada em uma variável.
 // 6 - Log a frase final da função executada no console.
-function Livro(nome, ano, autor) {}
+function Livro(nome, ano, autor) {
+  const nomegrande = nome.toUpperCase();
+  const totaldeanos = ano - 2050;
+  const Frase = nome + " por " + autor;
+  const objetoaqui = {
+    nome: nomegrande,
+    totaldeanos,
+    Frase,
+  };
+  return objetoaqui;
+}
+var Retornadafunction = Livro("O Senhor dos Anéis", 1954, "J. R. R. Tolkien");
+console.log(Retornadafunction.Frase);
 
 /*---------------------------------------------------------------------------------*/
 
 /*--------------------------------OBJETOS-------------------------------------------------*/
 
 /*Crie um objeto com os seus dados pessoais. Deve possuir pelo menos duas propriedades = nome e sobrenome */
+const Meusdados = {};
 
 // console.log(dadospessoais);
 
