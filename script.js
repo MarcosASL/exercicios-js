@@ -106,6 +106,10 @@ var cachorro = {
 /*---------------------ARRAYS E LOOP----------------------------*/
 
 /*CRIE UMA ARRAY COM OS ANOS QUE O BRASIL GANHOU A COPA: 1959, 1962, 1970, 1994, 2002. INTERAJA COM A ARRAY UTILIZANDO UM LOOP PARA MOSTRAR NO CONSOLE A SEGUINTE MENSAGEM : " O BRASIL GANHOU A COPA DE ${ANO}" */
+var BrasilCampeao = [1959, 1962, 1970, 1994, 2002];
+for (var i = 0; i < BrasilCampeao.length; i++) {
+  console.log(`O Brasil ganhou a copa de ${BrasilCampeao[i]}`);
+}
 
 /*INTERAJA COM UM LOOP NAS FRUTAS ABAIXO E PARE AO CHEGAR EM PERA */
 
