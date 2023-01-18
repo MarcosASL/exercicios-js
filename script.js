@@ -70,11 +70,10 @@ const Meusdados = {
 };
 
 /*CRIE UM MÉTODO NO OBJETO ANTERIOR QUE MOSTRE O SEU NOME COMPLETO */
-Meusdados.nomecompleto = function () {
-  return `${this.nome}  ${this.sobrenome}`;
+Meusdados.mostrarnome = function () {
+  return Meusdados.nome + " " + Meusdados.sobrenome;
 };
-console.log(Meusdados.nomecompleto());
-
+console.log(Meusdados.mostrarnome());
 /*CRIE UM OBJETO CACHORRO QUE REPRESENTE UM LABRADOR, PRETO COM 10 ANOS, QUE LATE AO VER UM HOMEM */
 
 /*NOMEIE 3 MÉTODOS OU PROPRIEDADES DE UM STRING*/
