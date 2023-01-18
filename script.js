@@ -56,20 +56,24 @@ function Livro(nome, ano, autor) {
   return objetoaqui;
 }
 var Retornadafunction = Livro("O Senhor dos Anéis", 1954, "J. R. R. Tolkien");
-console.log(Retornadafunction.Frase);
+// console.log(Retornadafunction.Frase);
 
 /*---------------------------------------------------------------------------------*/
 
 /*--------------------------------OBJETOS-------------------------------------------------*/
 
 /*Crie um objeto com os seus dados pessoais. Deve possuir pelo menos duas propriedades = nome e sobrenome */
-const Meusdados = {};
-
-// console.log(dadospessoais);
+const Meusdados = {
+  nome: "marcos",
+  sobrenome: "silva lima",
+  idade: 31,
+};
 
 /*CRIE UM MÉTODO NO OBJETO ANTERIOR QUE MOSTRE O SEU NOME COMPLETO */
-
-// console.log(dadospessoais.nomecompleto());
+Meusdados.nomecompleto = function () {
+  return `${this.nome}  ${this.sobrenome}`;
+};
+console.log(Meusdados.nomecompleto());
 
 /*CRIE UM OBJETO CACHORRO QUE REPRESENTE UM LABRADOR, PRETO COM 10 ANOS, QUE LATE AO VER UM HOMEM */
 
