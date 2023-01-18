@@ -127,13 +127,17 @@ var ultimafruta = frutas[frutas.length - 1];
 /*SOME 500 AO VALOR DE SCROLL ABAIXO, ATRIBUINDO O NOVO VALOR A SCROLL var scroll = 1000; */
 var scroll = 1000;
 scroll += 500;
-console.log(scroll);
+// console.log(scroll);
 
 /*ATRIBUA TRUE  PARA A VARIAVEL DARCREDITO, CASO O CLIENTE POSSUA CARRO E CASA, E FALSE CASO CONTRÁRIO
 var possuicarro = true;
 var possuicasa = true;
 var darcredito */
 
+var possuicarro = true;
+var possuicasa = true;
+var darcredito = possuicarro && possuicasa ? "dar credito" : "Nega crédito";
+console.log(darcredito);
 /*-----------------------------------------------------------------------------------------*/
 
 /*----------------------------------DOOM-------------------------------- */
