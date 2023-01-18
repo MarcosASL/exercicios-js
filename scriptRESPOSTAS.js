@@ -122,7 +122,7 @@ TextDecoderStream.arguments;
 /*CRIE UMA ARRAY COM OS ANOS QUE O BRASIL GANHOU A COPA: 1959, 1962, 1970, 1994, 2002. INTERAJA COM A ARRAY UTILIZANDO UM LOOP PARA MOSTRAR NO CONSOLE A SEGUINTE MENSAGEM : " O BRASIL GANHOU A COPA DE ${ANO}" */
 var BrasilCampeao = [1959, 1962, 1970, 1994, 2002];
 for (var i = 0; i < BrasilCampeao.length; i++) {
-  console.log(`O Brasil ganhou a copa de ${BrasilCampeao[i]}`);
+  console.log(`O Brasil ganhou a copa de ${BrasilCampeao[i]}`); // ou só ${Brasilcampeao}` mas na questão pede o loop então use!
 }
 
 /*lista de compras */

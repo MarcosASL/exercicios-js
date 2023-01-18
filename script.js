@@ -70,24 +70,26 @@ const Meusdados = {
 };
 
 /*CRIE UM MÉTODO NO OBJETO ANTERIOR QUE MOSTRE O SEU NOME COMPLETO */
-Meusdados.mostrarnome = function () {
-  return Meusdados.nome + " " + Meusdados.sobrenome;
+Meusdados.meunomecompleto = function () {
+  return `${this.nome}  ${this.sobrenome}`;
 };
-console.log(Meusdados.mostrarnome());
+// console.log(Meusdados.meunomecompleto());
+
 /*CRIE UM OBJETO CACHORRO QUE REPRESENTE UM LABRADOR, PRETO COM 10 ANOS, QUE LATE AO VER UM HOMEM */
-const cachorro = {
+let cachorro = {
   raça: "labrador",
   cor: "preto",
-  idade: 10 + "anos",
-  latir(pessoa) {
-    if (pessoa === "Homem") {
-      return "Latir";
+  idade: 10 + " anos",
+  Latir: true,
+  latir(verpessoa) {
+    if (verpessoa === "Homem") {
+      return "Latir muito";
     } else {
-      return "não latir";
+      return "Não Latir";
     }
   },
 };
-console.log(cachorro.latir("Homem"));
+// console.log(cachorro.latir("Homem"));
 
 /*NOMEIE 3 MÉTODOS OU PROPRIEDADES DE UM STRING*/
 
@@ -102,6 +104,10 @@ console.log(cachorro.latir("Homem"));
 /*---------------------ARRAYS E LOOP----------------------------*/
 
 /*CRIE UMA ARRAY COM OS ANOS QUE O BRASIL GANHOU A COPA: 1959, 1962, 1970, 1994, 2002. INTERAJA COM A ARRAY UTILIZANDO UM LOOP PARA MOSTRAR NO CONSOLE A SEGUINTE MENSAGEM : " O BRASIL GANHOU A COPA DE ${ANO}" */
+let Brasilcampeao = ["1959", "1962", "1970", "1994", "2002"];
+for (var anos = 0; anos < Brasilcampeao.length; anos++) {
+  console.log(`O BRASIL GANHOU A COPA DE ${Brasilcampeao[anos]}`);
+}
 
 /*INTERAJA COM UM LOOP NAS FRUTAS ABAIXO E PARE AO CHEGAR EM PERA */
 
