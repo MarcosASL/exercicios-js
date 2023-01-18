@@ -75,6 +75,19 @@ Meusdados.mostrarnome = function () {
 };
 console.log(Meusdados.mostrarnome());
 /*CRIE UM OBJETO CACHORRO QUE REPRESENTE UM LABRADOR, PRETO COM 10 ANOS, QUE LATE AO VER UM HOMEM */
+const cachorro = {
+  raça: "labrador",
+  cor: "preto",
+  idade: 10 + "anos",
+  latir(pessoa) {
+    if (pessoa === "Homem") {
+      return "Latir";
+    } else {
+      return "não latir";
+    }
+  },
+};
+console.log(cachorro.latir("Homem"));
 
 /*NOMEIE 3 MÉTODOS OU PROPRIEDADES DE UM STRING*/
 
