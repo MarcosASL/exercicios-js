@@ -1,37 +1,31 @@
 /*------------------------------FUNCTION------------------------------------------ */
 /*Crie uma function para verificar se um valor é true*/
-function trueCheck(valor) {
+function istrue(valor) {
   return !!valor;
 }
+
 /*Crie uma function matemática que retorne o perímetro de um quadrado, obs: perímetro é a soma dos quatro lados do quadrado*/
-function perimetro(lado) {
+function Perimetro(lado) {
   return lado * 4;
 }
+
 /*Crie uma function que retorne seu Nome completo, ela deve possuir o parâmetros: nome e sobrenome*/
-function nomeTodo(nome, sobrenome) {
+function Meunometodo(nome, sobrenome) {
   return `${nome} ${sobrenome}`;
 }
 
 /*CRIE UMA FUNCTION QUE VERIFICA SE UM NÚMERO É PAR (use modulo %)*/
-function parouimpar(n) {
-  var modulo = n % 2;
-  if (modulo === 0) {
-    return "é Par, meu rei";
+function isPar(n) {
+  if (n % 2 === 0) {
+    return "é par papai!";
   } else {
-    return "é impar, meu chefe";
+    return "é impar Papai";
   }
 }
 
 /*CRIAR FUNCTION QUE RETORNE O TIPO DE DADO DO ARGUMENTO PASSADO NELA (typeof)*/
-function tipodedado(dado) {
-  return typeof dado;
-}
 
 /*addEventListerner é uma function nativa do JS, o primeiro parametro é o evento que ocorre e o segundo é a callback, utilize essa function para mostrar no console o seu nome completo quando o evento 'scroll' ocorrer */
-
-addEventListener("scroll", function () {
-  // console.log("marcos lima");
-});
 
 // 1 - Crie uma função (livro) que possui 3 parâmetros: nome, ano e autor.
 // 2 - No corpo da função:
@@ -44,54 +38,20 @@ addEventListener("scroll", function () {
 //     'O Senhor dos Anéis', 1954, 'J. R. R. Tolkien'
 // 5 - Guarde o retorno da função executada em uma variável.
 // 6 - Log a frase final da função executada no console.
-function Livro(nome, ano, autor) {
-  const nomegrande = nome.toUpperCase();
-  const totalanos = ano - 2050;
-  const frase = nome + " por " + autor;
-  const objeto = {
-    nome: nomegrande,
-    totalanos,
-    frase,
-  };
-  return objeto;
-}
-const retorno = Livro("O Senhor dos Anéis", 1954, "J. R. R. Tolkien");
 
-console.log(retorno.frase);
 /*---------------------------------------------------------------------------------*/
 
 /*--------------------------------OBJETOS-------------------------------------------------*/
 
 /*Crie um objeto com os seus dados pessoais. Deve possuir pelo menos duas propriedades = nome e sobrenome */
-const dadospessoais = {
-  nome: "marcos",
-  sobrenome: "lima",
-  corFavorita: "azul",
-  pet: "gato",
-  nomedoPet: "Chelinha",
-};
+
 // console.log(dadospessoais);
 
 /*CRIE UM MÉTODO NO OBJETO ANTERIOR QUE MOSTRE O SEU NOME COMPLETO */
-dadospessoais.nomecompleto = function () {
-  return `${dadospessoais.nome} ${dadospessoais.sobrenome} e ${dadospessoais.nomedoPet}`;
-};
+
 // console.log(dadospessoais.nomecompleto());
 
 /*CRIE UM OBJETO CACHORRO QUE REPRESENTE UM LABRADOR, PRETO COM 10 ANOS, QUE LATE AO VER UM HOMEM */
-var cachorro = {
-  raça: "Labrador",
-  cor: "preto",
-  idade: 10 + " anos",
-  TemHomemNarua: true,
-  Latir(pessoa) {
-    if (pessoa === "Homem") {
-      return "Latir";
-    } else {
-      return "NãoLatir";
-    }
-  },
-};
 
 /*NOMEIE 3 MÉTODOS OU PROPRIEDADES DE UM STRING*/
 
@@ -106,10 +66,6 @@ var cachorro = {
 /*---------------------ARRAYS E LOOP----------------------------*/
 
 /*CRIE UMA ARRAY COM OS ANOS QUE O BRASIL GANHOU A COPA: 1959, 1962, 1970, 1994, 2002. INTERAJA COM A ARRAY UTILIZANDO UM LOOP PARA MOSTRAR NO CONSOLE A SEGUINTE MENSAGEM : " O BRASIL GANHOU A COPA DE ${ANO}" */
-var BrasilCampeao = [1959, 1962, 1970, 1994, 2002];
-for (var i = 0; i < BrasilCampeao.length; i++) {
-  console.log(`O Brasil ganhou a copa de ${BrasilCampeao[i]}`);
-}
 
 /*INTERAJA COM UM LOOP NAS FRUTAS ABAIXO E PARE AO CHEGAR EM PERA */
 
