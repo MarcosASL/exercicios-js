@@ -106,13 +106,22 @@ let cachorro = {
 /*CRIE UMA ARRAY COM OS ANOS QUE O BRASIL GANHOU A COPA: 1959, 1962, 1970, 1994, 2002. INTERAJA COM A ARRAY UTILIZANDO UM LOOP PARA MOSTRAR NO CONSOLE A SEGUINTE MENSAGEM : " O BRASIL GANHOU A COPA DE ${ANO}" */
 let Brasilcampeao = ["1959", "1962", "1970", "1994", "2002"];
 for (var anos = 0; anos < Brasilcampeao.length; anos++) {
-  console.log(`O BRASIL GANHOU A COPA DE ${Brasilcampeao[anos]}`);
+  // console.log(`O BRASIL GANHOU A COPA DE ${Brasilcampeao[anos]}`);
 }
 
 /*INTERAJA COM UM LOOP NAS FRUTAS ABAIXO E PARE AO CHEGAR EM PERA */
+// var frutas = ["banana", "maçã", "pera", "uva", "melância"];
+var frutas = ["banana", "maçã", "pera", "uva", "melância"];
+for (var i = 0; i < frutas.length; i++) {
+  console.log(frutas[i]);
+  if (frutas[i] === "pera") {
+    break;
+  }
+}
 
 /*COLOQUE A ULTIMA FRUTA DA ARRAY EM UMA VARIAVEL SEM REMOVER A MESMA DA ARRAY */
-
+var ultimafruta = frutas[frutas.length - 1];
+console.log(ultimafruta);
 /*-------------------------ATRIBUIÇÃO E TERNÁRIO---------------------------------------*/
 /*SOME 500 AO VALOR DE SCROLL ABAIXO, ATRIBUINDO O NOVO VALOR A SCROLL var scroll = 1000; */
 
