@@ -24,8 +24,14 @@ function isPar(n) {
 }
 
 /*CRIAR FUNCTION QUE RETORNE O TIPO DE DADO DO ARGUMENTO PASSADO NELA (typeof)*/
+function tipododado(dado) {
+  return typeof dado;
+}
 
 /*addEventListerner é uma function nativa do JS, o primeiro parametro é o evento que ocorre e o segundo é a callback, utilize essa function para mostrar no console o seu nome completo quando o evento 'scroll' ocorrer */
+addEventListener("scroll", function () {
+  // console.log("marcos brabo");
+});
 
 // 1 - Crie uma função (livro) que possui 3 parâmetros: nome, ano e autor.
 // 2 - No corpo da função:
@@ -38,6 +44,7 @@ function isPar(n) {
 //     'O Senhor dos Anéis', 1954, 'J. R. R. Tolkien'
 // 5 - Guarde o retorno da função executada em uma variável.
 // 6 - Log a frase final da função executada no console.
+function Livro(nome, ano, autor) {}
 
 /*---------------------------------------------------------------------------------*/
 
