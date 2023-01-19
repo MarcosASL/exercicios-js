@@ -175,6 +175,21 @@ window.addEventListener("mousemove", seguirmouse);
 7 - Mude o valor apenas se o total for menor que 10.
 8 - Quando não for mais possível adicionar, mostre uma mensagem no console. */
 
+const botao = document.querySelector("button");
+
+function somar() {
+  const divcomtexto = document.querySelector("#div-zero");
+  const total = Number(divcomtexto.innerText) + 1;
+  if (total < 10) {
+    divcomtexto.innerText = total;
+  } else {
+    console.log("Não é possivel adicionar mais");
+  }
+}
+if (botao) {
+  botao.addEventListener("click", somar);
+}
+
 /*----------------------------------------------------------------------------------- */
 
 // 1 - Adicione uma navegação (nav) com 3 links: ./, ./produto.html e ./contato.html
