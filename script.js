@@ -149,6 +149,8 @@ const retornalingua = window.navigator.language;
 console.log(retornalingua);
 
 /*RETORNE A LARGURA DA JANELA */
+const largurajanela = window.innerWidth;
+console.log(largurajanela);
 
 /*----------------------------------------------------------------------------------- */
 // 1 - Crie um círculo com uma div de width: 16px, height: 16px e background: #999;
