@@ -30,7 +30,7 @@ function Tipododado(dado) {
 
 /*addEventListerner é uma function nativa do JS, o primeiro parametro é o evento que ocorre e o segundo é a callback, utilize essa function para mostrar no console o seu nome completo quando o evento 'scroll' ocorrer */
 addEventListener("scroll", function () {
-  console.log("Marcos antonio da silva lima");
+  // console.log("Marcos antonio da silva lima");
 });
 
 // 1 - Crie uma função (livro) que possui 3 parâmetros: nome, ano e autor.
@@ -56,7 +56,7 @@ function Livro(nome, ano, autor) {
   return objetocomvalores;
 }
 var retornoFunction = Livro("O Senhor dos Anéis", 1954, "J. R. R. Tolkien");
-console.log(retornoFunction.Frase);
+// console.log(retornoFunction.Frase);
 
 /*---------------------------------------------------------------------------------*/
 
@@ -111,7 +111,7 @@ for (let anos = 0; anos < Brasilcampeao.length; anos++) {
 // var frutas = ["banana", "maçã", "pera", "uva", "melância"];
 var frutas = ["banana", "maçã", "pera", "uva", "melância"];
 for (let i = 0; i < frutas.length; i++) {
-  console.log(frutas[i]);
+  // console.log(frutas[i]);
   if (frutas[i] === "pera") {
     break;
   }
@@ -119,7 +119,7 @@ for (let i = 0; i < frutas.length; i++) {
 
 /*COLOQUE A ULTIMA FRUTA DA ARRAY EM UMA VARIAVEL SEM REMOVER A MESMA DA ARRAY */
 var ultimafruta = frutas[frutas.length - 1];
-console.log(ultimafruta);
+// console.log(ultimafruta);
 
 /*-------------------------ATRIBUIÇÃO E TERNÁRIO---------------------------------------*/
 /*SOME 500 AO VALOR DE SCROLL ABAIXO, ATRIBUINDO O NOVO VALOR A SCROLL var scroll = 1000; */
@@ -131,12 +131,14 @@ var darcredito */
 
 var possuicarro = true;
 var possuicasa = true;
-var darcredito = possuicarro && possuicasa ? "dar credito" : "Nega crédito";
+var darcredito = possuicarro && possuicasa ? "dar credito" : "Negar crédito";
 // console.log(darcredito);
 /*-----------------------------------------------------------------------------------------*/
 
 /*----------------------------------DOOM-------------------------------- */
 /*RETORNE O URL DA PÁGINA ATUAL UTILIZANDO O OBJETO WINDOW */
+const retornalink = window.location.href;
+console.log(retornalink);
 
 /*SELECIONE O PRIMEIRO ELEMENTO DA PÁGINA QUE POSSUA A CLASSE ATIVO */
 
