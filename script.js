@@ -141,8 +141,12 @@ const retornalink = window.location.href;
 console.log(retornalink);
 
 /*SELECIONE O PRIMEIRO ELEMENTO DA PÁGINA QUE POSSUA A CLASSE ATIVO */
+var achaativo = document.querySelector(".ativo");
+console.log(achaativo);
 
 /*RETORNE A LINGUAGEM DO NAVEGADOR */
+const retornalingua = window.navigator.language;
+console.log(retornalingua);
 
 /*RETORNE A LARGURA DA JANELA */
 
