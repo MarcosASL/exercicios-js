@@ -5,32 +5,32 @@ function istrue(valor) {
 }
 
 /*Crie uma function matemática que retorne o perímetro de um quadrado, obs: perímetro é a soma dos quatro lados do quadrado*/
-function Perimetro(lado) {
+function perimetro(lado) {
   return lado * 4;
 }
 
 /*Crie uma function que retorne seu Nome completo, ela deve possuir o parâmetros: nome e sobrenome*/
-function Meunometodo(nome, sobrenome) {
+function meunometodo(nome, sobrenome) {
   return `${nome} ${sobrenome}`;
 }
 
 /*CRIE UMA FUNCTION QUE VERIFICA SE UM NÚMERO É PAR (use modulo %)*/
 function isPar(n) {
   if (n % 2 === 0) {
-    return "é par papai!";
+    return "é par meu chapa";
   } else {
-    return "é impar Papai";
+    return "não é par meu chapa";
   }
 }
 
 /*CRIAR FUNCTION QUE RETORNE O TIPO DE DADO DO ARGUMENTO PASSADO NELA (typeof)*/
-function tipododado(dado) {
+function Tipododado(dado) {
   return typeof dado;
 }
 
 /*addEventListerner é uma function nativa do JS, o primeiro parametro é o evento que ocorre e o segundo é a callback, utilize essa function para mostrar no console o seu nome completo quando o evento 'scroll' ocorrer */
 addEventListener("scroll", function () {
-  // console.log("marcos brabo");
+  console.log("Marcos antonio da silva lima");
 });
 
 // 1 - Crie uma função (livro) que possui 3 parâmetros: nome, ano e autor.
@@ -46,17 +46,17 @@ addEventListener("scroll", function () {
 // 6 - Log a frase final da função executada no console.
 function Livro(nome, ano, autor) {
   const nomegrande = nome.toUpperCase();
-  const totaldeanos = ano - 2050;
-  const Frase = nome + " por " + autor;
-  const objetoaqui = {
+  const totalanos = ano - 2050;
+  const Frase = nomegrande + " por " + autor;
+  const objetocomvalores = {
     nome: nomegrande,
-    totaldeanos,
+    totalanos,
     Frase,
   };
-  return objetoaqui;
+  return objetocomvalores;
 }
-var Retornadafunction = Livro("O Senhor dos Anéis", 1954, "J. R. R. Tolkien");
-// console.log(Retornadafunction.Frase);
+var retornoFunction = Livro("O Senhor dos Anéis", 1954, "J. R. R. Tolkien");
+console.log(retornoFunction.Frase);
 
 /*---------------------------------------------------------------------------------*/
 
@@ -80,16 +80,14 @@ let cachorro = {
   raça: "labrador",
   cor: "preto",
   idade: 10 + " anos",
-  Latir: true,
-  latir(verpessoa) {
+  Latir(verpessoa) {
     if (verpessoa === "Homem") {
-      return "Latir muito";
+      return "Latir";
     } else {
-      return "Não Latir";
+      return "Não latir";
     }
   },
 };
-// console.log(cachorro.latir("Homem"));
 
 /*NOMEIE 3 MÉTODOS OU PROPRIEDADES DE UM STRING*/
 
@@ -103,31 +101,28 @@ let cachorro = {
 
 /*---------------------ARRAYS E LOOP----------------------------*/
 
-/*CRIE UMA ARRAY COM OS ANOS QUE O BRASIL GANHOU A COPA: 1959, 1962, 1970, 1994, 2002. INTERAJA COM A ARRAY UTILIZANDO UM LOOP PARA MOSTRAR NO CONSOLE A SEGUINTE MENSAGEM : " O BRASIL GANHOU A COPA DE ${ANO}" */
-let Brasilcampeao = ["1959", "1962", "1970", "1994", "2002"];
-for (var anos = 0; anos < Brasilcampeao.length; anos++) {
+/*CRIE UMA ARRAY COM OS ANOS QUE O BRASIL GANHOU A COPA: 1959, 1962, 1970, 1994, 2002. INTERAJA COM A ARRAY UTILIZANDO UM LOOP PARA MOSTRAR NO CONSOLE A SEGUINTE MENSAGEM : ` O BRASIL GANHOU A COPA DE ${ANO}` */
+let Brasilcampeao = [1959, 1962, 1970, 1994, 2002];
+for (let anos = 0; anos < Brasilcampeao.length; anos++) {
   // console.log(`O BRASIL GANHOU A COPA DE ${Brasilcampeao[anos]}`);
 }
 
 /*INTERAJA COM UM LOOP NAS FRUTAS ABAIXO E PARE AO CHEGAR EM PERA */
 // var frutas = ["banana", "maçã", "pera", "uva", "melância"];
 var frutas = ["banana", "maçã", "pera", "uva", "melância"];
-for (var fruta = 0; fruta < frutas.length; fruta++) {
-  // console.log(frutas[fruta]);
-  if (frutas[fruta] === "pera") {
+for (let i = 0; i < frutas.length; i++) {
+  console.log(frutas[i]);
+  if (frutas[i] === "pera") {
     break;
   }
 }
 
 /*COLOQUE A ULTIMA FRUTA DA ARRAY EM UMA VARIAVEL SEM REMOVER A MESMA DA ARRAY */
 var ultimafruta = frutas[frutas.length - 1];
-// console.log(ultimafruta);
+console.log(ultimafruta);
 
 /*-------------------------ATRIBUIÇÃO E TERNÁRIO---------------------------------------*/
 /*SOME 500 AO VALOR DE SCROLL ABAIXO, ATRIBUINDO O NOVO VALOR A SCROLL var scroll = 1000; */
-var scroll = 1000;
-scroll += 500;
-// console.log(scroll);
 
 /*ATRIBUA TRUE  PARA A VARIAVEL DARCREDITO, CASO O CLIENTE POSSUA CARRO E CASA, E FALSE CASO CONTRÁRIO
 var possuicarro = true;
@@ -137,7 +132,7 @@ var darcredito */
 var possuicarro = true;
 var possuicasa = true;
 var darcredito = possuicarro && possuicasa ? "dar credito" : "Nega crédito";
-console.log(darcredito);
+// console.log(darcredito);
 /*-----------------------------------------------------------------------------------------*/
 
 /*----------------------------------DOOM-------------------------------- */

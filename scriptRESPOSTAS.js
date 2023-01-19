@@ -48,7 +48,7 @@ addEventListener("scroll", function () {
 function livro(nome, ano, autor) {
   const NomeMaior = nome.toUpperCase();
   const TotalAnos = ano - 2050;
-  const frase = nome + " por " + autor;
+  const frase = NomeMaior + " por " + autor;
   const objeto = {
     nome: NomeMaior,
     TotalAnos,
