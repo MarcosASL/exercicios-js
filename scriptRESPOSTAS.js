@@ -232,7 +232,7 @@ if (botao) {
 /*----------------------------------------------------------------------------------- */
 
 // 1 - Adicione um (nav) com 3 links: ./, ./produto.html e ./contatos.html
-// 2 - Crie as páginas produto.html e contato.html com o mesmo html de index.html
+// 2 - Crie as páginas produto.html e contato.html com o mesmo  conteúdo de index.html
 // 3 - Selecione os links na navegação.
 // 4 - Para cada link execute uma função (ativarLink);
 // 5 - Na função, extraia o href do elemento.
