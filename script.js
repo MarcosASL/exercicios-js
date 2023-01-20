@@ -137,58 +137,43 @@ var darcredito = possuicarro && possuicasa ? "dar credito" : "Negar crédito";
 
 /*----------------------------------DOOM-------------------------------- */
 /*RETORNE O URL DA PÁGINA ATUAL UTILIZANDO O OBJETO WINDOW */
-const retornalink = window.location.href;
-console.log(retornalink);
+let retornurl = window.location.href;
+console.log(retornurl);
 
 /*SELECIONE O PRIMEIRO ELEMENTO DA PÁGINA QUE POSSUA A CLASSE ATIVO */
-var achaativo = document.querySelector(".ativo");
-console.log(achaativo);
+let pegaelemento = document.querySelector(".ativo");
+console.log(pegaelemento);
 
 /*RETORNE A LINGUAGEM DO NAVEGADOR */
-const retornalingua = window.navigator.language;
-console.log(retornalingua);
+let lingnav = window.navigator.language;
+console.log("🚀 ~ file: script.js:149 ~ lingnav", lingnav);
 
 /*RETORNE A LARGURA DA JANELA */
-const largurajanela = window.innerWidth;
-console.log(largurajanela);
+let janelalarg = window.innerWidth;
+console.log("🚀 ~ file: script.js:153 ~ janelalarg", janelalarg);
 
 /*----------------------------------------------------------------------------------- */
 // 1 - Crie um círculo com uma div de width: 16px, height: 16px e background: #999;
 // 2 - Adicione ao window uma função que ocorre ao "mousemove";
 // 3 - Na função mude as propriedades top e left do círculo com base no mouse.
 // 4 - Você pode usar elemento.style.propriedade para mudar o CSS diretamente.
-const circulo = document.querySelector(".circulo");
-
-function seguirmouse(event) {
-  circulo.style.top = event.y + "px";
-  circulo.style.left = event.x + "px";
+let selecionacirculo = document.querySelector(".circulo");
+function aomover(event) {
+  selecionacirculo.style.top = event.y + "px";
+  selecionacirculo.style.left = event.x + "px";
 }
-window.addEventListener("mousemove", seguirmouse);
+window.addEventListener("mousemove", aomover);
+
 /*----------------------------------------------------------------------------------- */
 
-/*1 - Crie um botão com nome de Adicionar.
+/*1 - Crie um botão com nome de Adicionar.  CRIADO NO HTML
 2 - Adicione uma função (somar) ao clique desse botão
 3 - Só adicione a função se o botão existir na tela.
-4 - Crie uma div com o texto 0 dentro dela: <div>0</div>
+4 - Crie uma div com o texto 0 dentro dela: <div>0</div> CRIADO NO HTML
 5 - Na função do botão, pegue o total que estiver dentro da div e adicione + 1.
 6 - Mude o valor da div para o novo total.
 7 - Mude o valor apenas se o total for menor que 10.
 8 - Quando não for mais possível adicionar, mostre uma mensagem no console. */
-
-const botao = document.querySelector("button");
-
-function somar() {
-  const divcomtexto = document.querySelector("#div-zero");
-  const total = Number(divcomtexto.innerText) + 1;
-  if (total < 10) {
-    divcomtexto.innerText = total;
-  } else {
-    console.log("Não é possivel adicionar mais");
-  }
-}
-if (botao) {
-  botao.addEventListener("click", somar);
-}
 
 /*----------------------------------------------------------------------------------- */
 
