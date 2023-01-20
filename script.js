@@ -157,12 +157,13 @@ console.log("🚀 ~ file: script.js:153 ~ janelalarg", janelalarg);
 // 2 - Adicione ao window uma função que ocorre ao "mousemove";
 // 3 - Na função mude as propriedades top e left do círculo com base no mouse.
 // 4 - Você pode usar elemento.style.propriedade para mudar o CSS diretamente.
-let selecionacirculo = document.querySelector(".circulo");
-function aomover(event) {
-  selecionacirculo.style.top = event.y + "px";
-  selecionacirculo.style.left = event.x + "px";
+let circulo = document.querySelector(".circulo");
+function movermouse(event) {
+  circulo.style.top = event.y + "px";
+  circulo.style.left = event.x + "px";
 }
-window.addEventListener("mousemove", aomover);
+
+window.addEventListener("mousemove", movermouse);
 
 /*----------------------------------------------------------------------------------- */
 
@@ -175,21 +176,22 @@ window.addEventListener("mousemove", aomover);
 7 - Mude o valor apenas se o total for menor que 10.
 8 - Quando não for mais possível adicionar, mostre uma mensagem no console. */
 
-let Botao = document.querySelector("button");
-let divzero = document.querySelector("#div-zero");
-function Somar() {
-  let Pegartotal = Number(divzero.innerText) + 1;
-  if (divzero.innerText < 10) {
-    divzero.innerText = Pegartotal;
-  } else {
-    console.log("não é possivel add mais");
+function BottuonAdiciona() {
+  let botao = document.querySelector("button");
+  let div = document.querySelector("#div-zero");
+  function somar() {
+    let total = Number(div.innerText) + 1;
+    if (div.innerText < 10) {
+      div.innerText = total;
+    } else {
+      console.log("não é possivel adicionar mais números meu parceiro lindo");
+    }
+  }
+  if (botao) {
+    document.addEventListener("click", somar);
   }
 }
-
-if (Botao) {
-  document.addEventListener("click", Somar);
-}
-
+BottuonAdiciona();
 /*----------------------------------------------------------------------------------- */
 
 // 1 - Adicione uma navegação (nav) com 3 links: ./, ./produto.html e ./contato.html
