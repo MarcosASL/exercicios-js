@@ -166,29 +166,28 @@ window.addEventListener("mousemove", aomover);
 
 /*----------------------------------------------------------------------------------- */
 
-/*1 - Crie um botão com nome de Adicionar.  CRIADO NO HTML
+/*1 - Crie um botão com nome de Adicionar.  "CRIADO NO HTML"
 2 - Adicione uma função (somar) ao clique desse botão
 3 - Só adicione a função se o botão existir na tela.
-4 - Crie uma div com o texto 0 dentro dela: <div>0</div> CRIADO NO HTML
+4 - Crie uma div com o texto 0 dentro dela: <div>0</div> "CRIADO NO HTML"
 5 - Na função do botão, pegue o total que estiver dentro da div e adicione + 1.
 6 - Mude o valor da div para o novo total MAS...
 7 - Mude o valor apenas se o total for menor que 10.
 8 - Quando não for mais possível adicionar, mostre uma mensagem no console. */
 
-let pegabotao = document.querySelector("button");
-
-function somar() {
-  const divzero = document.querySelector("#div-zero");
-  const pegaTotal = Number(divzero.innerText) + 1;
+let Botao = document.querySelector("button");
+let divzero = document.querySelector("#div-zero");
+function Somar() {
+  let Pegartotal = Number(divzero.innerText) + 1;
   if (divzero.innerText < 10) {
-    divzero.innerText = pegaTotal;
+    divzero.innerText = Pegartotal;
   } else {
-    console.log("Não é possivel adicionar mais");
+    console.log("não é possivel add mais");
   }
 }
 
-if (pegabotao) {
-  document.addEventListener("click", somar);
+if (Botao) {
+  document.addEventListener("click", Somar);
 }
 
 /*----------------------------------------------------------------------------------- */
