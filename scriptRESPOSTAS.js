@@ -226,6 +226,7 @@ function somar() {
   }
 }
 if (botao) {
+  //TODO SÓ EXECUTA SE O BOTÃO EXISTIR!
   botao.addEventListener("click", somar);
 }
 /*----------------------------------------------------------------------------------- */
