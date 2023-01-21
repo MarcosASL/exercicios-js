@@ -234,6 +234,8 @@ const primeiroh2 = document.querySelector(".animais-descricao h2");
 console.log(primeiroh2);
 
 // Selecione o último p do site
+const selecionaP = document.querySelectorAll("p");
+console.log(selecionaP[selecionaP.length - 1]);
 
 /*------------------------------------------------------------------------- */
 
