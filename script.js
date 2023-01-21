@@ -177,21 +177,22 @@ window.addEventListener("mousemove", movermouse);
 8 - Quando não for mais possível adicionar, mostre uma mensagem no console. */
 
 function BottuonAdiciona() {
-  let botao = document.querySelector("button");
-  let div = document.querySelector("#div-zero");
+  const botao = document.querySelector("#botton2");
   function somar() {
-    let total = Number(div.innerText) + 1;
-    if (div.innerText < 10) {
+    const div = document.querySelector("#div-zero");
+    const total = Number(div.innerText) + 1;
+    if (total < 10) {
       div.innerText = total;
     } else {
       console.log("não é possivel adicionar mais números meu parceiro lindo");
     }
   }
   if (botao) {
-    document.addEventListener("click", somar);
+    botao.addEventListener("click", somar);
   }
 }
 BottuonAdiciona();
+
 /*----------------------------------------------------------------------------------- */
 
 // 1 - Adicione uma navegação (nav) com 3 links: ./, ./produto.html e ./contato.html

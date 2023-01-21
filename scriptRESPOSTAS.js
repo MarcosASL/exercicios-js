@@ -230,7 +230,7 @@ if (botao) {
   botao.addEventListener("click", somar);
 }
 /*----------------------------------------------------------------------------------- */
-
+/*TODO ATENÇÃO: ESSE QUE ENSINA A MARCAR A NAVEGAÇÃO ONDE VC ESTÁ NO SITE! USAR NO MEU PORTIFOLIO!*/
 // 1 - Adicione um (nav) com 3 links: ./, ./produto.html e ./contatos.html
 // 2 - Crie as páginas produto.html e contato.html com o mesmo  conteúdo de index.html
 // 3 - Selecione os links na navegação.
