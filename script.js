@@ -230,6 +230,8 @@ const linkinternos = document.querySelectorAll("[href^='#']");
 console.log(linkinternos);
 
 // Selecione o primeiro h2 dentro de .animais-descricao
+const primeiroh2 = document.querySelector(".animais-descricao h2");
+console.log(primeiroh2);
 
 // Selecione o último p do site
 
