@@ -146,11 +146,11 @@ console.log(pegaelemento);
 
 /*RETORNE A LINGUAGEM DO NAVEGADOR */
 let lingnav = window.navigator.language;
-console.log("🚀 ~ file: script.js:149 ~ lingnav", lingnav);
+console.log(lingnav);
 
 /*RETORNE A LARGURA DA JANELA */
 let janelalarg = window.innerWidth;
-console.log("🚀 ~ file: script.js:153 ~ janelalarg", janelalarg);
+console.log(janelalarg);
 
 /*----------------------------------------------------------------------------------- */
 // 1 - Crie um círculo com uma div de width: 16px, height: 16px e background: #999;
@@ -177,7 +177,7 @@ window.addEventListener("mousemove", movermouse);
 8 - Quando não for mais possível adicionar, mostre uma mensagem no console. */
 
 function BottuonAdiciona() {
-  const botao = document.querySelector("#botton2");
+  const botao = document.querySelector("button");
   function somar() {
     const div = document.querySelector("#div-zero");
     const total = Number(div.innerText) + 1;
@@ -202,23 +202,28 @@ BottuonAdiciona();
 // 5 - Na função, extraia o href do elemento.
 // 6 - Verifique se o href é igual ao URL da página (document.location.href)
 // 7 - Se for igual mude o backgroundColor para black e a color para white do link.
-let pegalinks = document.querySelectorAll("nav a");
 
-function ativarlink(link) {
-  const Pegahref = link.href;
-  const pegaUrl = document.location.href;
-  if (Pegahref === pegaUrl) {
+const links = document.querySelectorAll("nav a");
+
+function ativarLink(link) {
+  const extrairhref = link.href;
+  const extrairurl = document.location.href;
+  if (extrairhref === extrairurl) {
     link.style.backgroundColor = "black";
     link.style.Color = "white";
   }
 }
-pegalinks.forEach(ativarlink);
+links.forEach(ativarLink);
 
 /*DOOM PARA INICIANTES O CURSO DE JAVASCRIPT COMPLETO E6 */
 
 // Retorne no console todas as imagens do site
+const todasimagens = document.querySelectorAll("img");
+console.log(todasimagens);
 
 // Retorne no console apenas as imagens que começaram com a palavra imagem
+const imgsap = document.querySelectorAll("[src^='./img/imagem']");
+console.log(imgsap);
 
 // Selecione todos os links internos (onde o href começa com #)
 
