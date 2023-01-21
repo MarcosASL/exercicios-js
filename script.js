@@ -222,10 +222,12 @@ const todasimagens = document.querySelectorAll("img");
 console.log(todasimagens);
 
 // Retorne no console apenas as imagens que começaram com a palavra imagem
-const imgsap = document.querySelectorAll("[src^='./img/imagem']");
+const imgsap = document.querySelectorAll("img[src^='./img/imagem']");
 console.log(imgsap);
 
 // Selecione todos os links internos (onde o href começa com #)
+const linkinternos = document.querySelectorAll("[href^='#']");
+console.log(linkinternos);
 
 // Selecione o primeiro h2 dentro de .animais-descricao
 
