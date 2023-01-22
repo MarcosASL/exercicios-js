@@ -241,11 +241,14 @@ console.log(selecionaP[selecionaP.length - 1]);
 
 // Mostre no console cada paragrafo do site "aquele esquema exibe detalhado o objeto no console"
 const paragrafo = document.querySelectorAll("p");
-paragrafo.forEach((item) => {
-  console.log(item);
+paragrafo.forEach((batata) => {
+  console.log(batata);
 });
 
-// Mostre o texto dos parágrafos no console 'só o texto'
+// Mostre o texto dos parágrafos  acima  no console 'só o texto'
+paragrafo.forEach((text) => {
+  console.log(text.innerText);
+});
 
 // Como corrigir os erros abaixo:
 
