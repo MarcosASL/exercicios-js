@@ -272,7 +272,7 @@ console.log(ultimoP[ultimoP.length - 1]);
 
 /*------------------------------------------------------------------------- */
 
-// Mostre no console cada parágrado do site
+// Mostre no console cada parágrado do site "aquele esquema exibe detalhado o objeto no console"
 const paragrafos = document.querySelectorAll("p");
 paragrafos.forEach((item) => {
   console.log(item);
