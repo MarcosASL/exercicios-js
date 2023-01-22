@@ -271,6 +271,12 @@ imgs.forEach(() => i++);
 /*------------------JÁ FAZ PARTE DAS NOVA AULAS------------------------ */
 
 // Adicione a classe ativo a todos os itens do menu
+const addativo = document.querySelectorAll(".menu a");
+addativo.forEach((evento) => {
+  evento.classList.add("ativo");
+});
+
+console.log(addativo);
 
 // Remove a classe ativo de todos os itens do menu e mantenha apenas no primeiro
 
