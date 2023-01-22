@@ -275,10 +275,15 @@ const addativo = document.querySelectorAll(".menu a");
 addativo.forEach((evento) => {
   evento.classList.add("ativo");
 });
-
 console.log(addativo);
 
 // Remove a classe ativo de todos os itens do menu e mantenha apenas no primeiro
+addativo.forEach((evento) => {
+  evento.classList.remove("ativo");
+});
+addativo[0].classList.add("ativo");
+
+console.log(addativo);
 
 // Verifique se as imagens possuem o atributo alt
 
