@@ -277,7 +277,7 @@ const paragrafos = document.querySelectorAll("p");
 paragrafos.forEach((item) => {
   console.log(item);
 });
-// Mostre o texto dos parágrafos'só o texto' no console
+// Mostre o texto dos parágrafos acima'só o texto' no console
 paragrafos.forEach((item) => {
   console.log(item.innerText);
 });
