@@ -286,14 +286,31 @@ addativo[0].classList.add("ativo");
 console.log(addativo);
 
 // Verifique se as imagens possuem o atributo alt
+const verificaimg = document.querySelectorAll("img");
+verificaimg.forEach((img) => {
+  const possuialt = img.hasAttribute("alt");
+  console.log(img, possuialt);
+});
 
 // Modifique o href do link externo no menu
+const pegahref = document.querySelector('a[href^="http"]');
+pegahref.setAttribute("href", "https://www.google.com/");
+console.log(pegahref);
 
 ////////////////////////////////////////////////////////////////////////////////
 
 // Verifique a distância da primeira imagem em relação ao topo da página
+const imgverifica = document.querySelector("img");
+const imgtopdistancia = img.offsetTop;
+console.log("🚀 ~ file: script.js:304 ~ imgverifica", imgverifica);
 
 // Retorne a soma da largura de todas as imagens
+const imagens = document.querySelectorAll("img");
+let soma = 0;
+imagens.forEach((imagem) => {
+  soma += imagem.offsetHeight;
+});
+console.log(soma);
 
 // Verifique se os links da página possuem o mínimo recomendado para telas utilizadas  com o dedo. (48px/48px de acordo com o google)
 
