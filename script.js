@@ -389,7 +389,12 @@ window.addEventListener("keydown", handleClickT);
 ////////////////////////////////////////////////////////////////////////////////
 /*-------------------------Traversing e Manipulação---------------------------- */
 // Duplique o menu e adicione ele em copy
+const menu = document.querySelector(".menu");
+const copy = document.querySelector(".copy");
 
+const cloneMenu = menu.cloneNode(true);
+
+copy.appendChild(cloneMenu);
 ////////////////////////////////////////////////////////////////////////////////
 // Selecione o primeiro DT da dl de Faq
 ////////////////////////////////////////////////////////////////////////////////
