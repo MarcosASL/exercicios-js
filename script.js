@@ -379,7 +379,13 @@ TodosElementos.forEach((elemento) => {
 console.log(TodosElementos);
 /* Se o usuário clicar na tecla (t), aumente todo o texto do site.
 (crie no css o estilo html.'nomedaclasse' e bota a font-size sendo grande) */
-
+function handleClickT(event) {
+  console.log(event.key);
+  if (event.key === "t") {
+    document.documentElement.classList.toggle("textomaior");
+  }
+}
+window.addEventListener("keydown", handleClickT);
 ////////////////////////////////////////////////////////////////////////////////
 /*-------------------------Traversing e Manipulação---------------------------- */
 // Duplique o menu e adicione ele em copy
