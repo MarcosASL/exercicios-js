@@ -266,140 +266,70 @@ imgs.forEach( => {
 imgs.forEach(() => i++);
 */
 
+// const imgs = document.querySelectorAll("img");
+
+// imgs.forEach((item, index) => {
+//   console.log(item, index);
+// });
+
+// let i = 0;
+// imgs.forEach(() => {
+//   console.log(i++);
+// });
+
+// imgs.forEach(() => i++);
+
 /////////////////////////////////
 
 /*------------------JÁ FAZ PARTE DAS NOVA AULAS------------------------ */
 
-// Adicione a classe ativo a todos os itens do menu
+// Adicione a classe ativo a todos os itens link do menu
 const addativo = document.querySelectorAll(".menu a");
-addativo.forEach((evento) => {
-  evento.classList.add("ativo");
+addativo.forEach((item) => {
+  item.classList.add("ativo");
 });
-console.log(addativo);
+
+// console.log("🚀 ~ file: script.js:288 ~ addativo", addativo);
 
 // Remove a classe ativo de todos os itens do menu e mantenha apenas no primeiro
-addativo.forEach((evento) => {
-  evento.classList.remove("ativo");
-});
-addativo[0].classList.add("ativo");
-
-console.log(addativo);
 
 // Verifique se as imagens possuem o atributo alt
-const verificaimg = document.querySelectorAll("img");
-verificaimg.forEach((img) => {
-  const possuialt = img.hasAttribute("alt");
-  console.log(img, possuialt);
-});
 
 // Modifique o href do link externo no menu
-const pegahref = document.querySelector('a[href^="http"]');
-pegahref.setAttribute("href", "https://www.google.com/");
-console.log(pegahref);
 
 ////////////////////////////////////////////////////////////////////////////////
 
 // Verifique a distância da primeira imagem em relação ao topo da página
-const imgverifica = document.querySelector("img");
-const imgtopdistancia = img.offsetTop;
-console.log("🚀 ~ file: script.js:304 ~ imgverifica", imgverifica);
 
 // Retorne a soma da largura de todas as imagens
-const imagens = document.querySelectorAll("img");
-let soma = 0;
-imagens.forEach((imagem) => {
-  soma += imagem.offsetHeight;
-});
-console.log(soma);
 
 // Verifique se os links da página possuem o mínimo recomendado para telas utilizadas  com o dedo. (48px/48px de acordo com o google)
 
-const links1 = document.querySelectorAll("a");
-links1.forEach((link) => {
-  const linkWidth = link.offsetWidth;
-  const linkHeight = link.offsetHeight;
-  if (linkWidth >= 48 && linkHeight <= 48) {
-    console.log(link, "possui boa acessibilidade");
-  } else {
-    console.log(link, "Não possui boa acessibilidade");
-  }
-});
-
 // Se o browser for menor que 720px, dicione a classe menu-mobile ao menu a
-const browserSmall = window.matchMedia("(max-width: 720px)").matches;
-if (browserSmall) {
-  const menu = document.querySelector(".meu");
-  menu.classList.add("menu-mobile");
-}
+
 ////////////////////////////////////////////////////////////////////////////////
 
 /* Quando o usuário clicar nos links internos do site,
 adicione a classe ativo ao item clicado e remova dos
 demais itens caso eles possuam a mesma. Previna
  o comportamento padrão desses links */
-const Linksinternos = document.querySelectorAll('a[href^="#"]');
-
-function handleLink(event) {
-  event.preventDefault();
-  Linksinternos.forEach((link) => {
-    link.classList.remove("ativo");
-  });
-  event.currentTarget.classList.add("ativo");
-}
-
-Linksinternos.forEach((link) => {
-  link.addEventListener("click", handleLink);
-});
 
 /* Selecione todos os elementos do site começando a partir do body,
  ao clique mostre exatamente quais elementos estão sendo clicados */
 
-const TodosElementos1 = document.querySelectorAll("body *");
-
-function handleElemento(event) {
-  console.log(event.currentTarget);
-}
-
-TodosElementos.forEach((elemento) => {
-  elemento.addEventListener("click", handleElemento);
-});
-console.log(TodosElementos1);
-
 /* Utilizando o código anterior, ao invés de mostrar no console,
 remova o elemento que está sendo clicado, o método remove() remove um elemento.*/
-const TodosElementos = document.querySelectorAll("body *");
 
-function handleElemento(event) {
-  event.currentTarget.remove();
-}
-
-TodosElementos.forEach((elemento) => {
-  elemento.addEventListener("click", handleElemento);
-});
-console.log(TodosElementos);
 /* Se o usuário clicar na tecla (t), aumente todo o texto do site.
 (crie no css o estilo html.'nomedaclasse' e bota a font-size sendo grande) */
-function handleClickT(event) {
-  console.log(event.key);
-  if (event.key === "t") {
-    document.documentElement.classList.toggle("textomaior");
-  }
-}
-window.addEventListener("keydown", handleClickT);
+
 ////////////////////////////////////////////////////////////////////////////////
 /*-------------------------Traversing e Manipulação---------------------------- */
 // Duplique o menu e adicione ele em copy
-const menu = document.querySelector(".menu");
-const copy = document.querySelector(".copy");
 
-const cloneMenu = menu.cloneNode(true);
-
-copy.appendChild(cloneMenu);
 ////////////////////////////////////////////////////////////////////////////////
 // Selecione o primeiro DT da dl de Faq
-const faq1 = document.querySelector(".faq"); //seleciono o .faq
-const PrimeiroDT = faq1.querySelector("dt"); //dentro do .faq eu pego o dt
-console.log(PrimeiroDT);
+
 ////////////////////////////////////////////////////////////////////////////////
 // Selecione o DD referente ao primeiro DT (dd é tag de descrição após o dt)
 

@@ -308,7 +308,7 @@ imgs.forEach(() => {
 imgs.forEach(() => i++);
 
 /*------------------JÁ FAZ PARTE DAS NOVA AULAS------------------------ */
-//adicione a classe ativo a todos os itens do menu
+//adicione a classe ativo a todos os tens links do menu
 const itensMenu = document.querySelectorAll(".menu a");
 itensMenu.forEach((item) => {
   item.classList.add("ativo");
