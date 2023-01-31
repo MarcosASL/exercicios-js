@@ -302,10 +302,13 @@ removeativo[0].classList.add("ativo");
 const pegaimg = document.querySelectorAll("img");
 pegaimg.forEach((img) => {
   const verificaativo = img.hasAttribute("alt");
-  console.log(img, verificaativo);
+  // console.log(img, verificaativo);
 });
 
 // Modifique o href do link externo no menu
+const pegalinks = document.querySelector('.menu a[href^="http"]');
+pegalinks.setAttribute("href", "https://www.google.com/");
+// console.log(pegalinks);
 
 ////////////////////////////////////////////////////////////////////////////////
 
