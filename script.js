@@ -296,9 +296,14 @@ removeativo.forEach((item) => {
   item.classList.remove("ativo");
 });
 removeativo[0].classList.add("ativo");
-console.log(removeativo);
+// console.log(removeativo);
 
 // Verifique se as imagens possuem o atributo alt
+const pegaimg = document.querySelectorAll("img");
+pegaimg.forEach((img) => {
+  const verificaativo = img.hasAttribute("alt");
+  console.log(img, verificaativo);
+});
 
 // Modifique o href do link externo no menu
 
