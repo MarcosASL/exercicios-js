@@ -306,13 +306,17 @@ pegaimg.forEach((img) => {
 });
 
 // Modifique o href do link externo no menu
-const pegalinks = document.querySelector('.menu a[href^="http"]');
-pegalinks.setAttribute("href", "https://www.google.com/");
-// console.log(pegalinks);
+const pegalink = document.querySelector(".menu a[href^='http']");
+pegalink.setAttribute("href", "www.google.com");
+// console.log("🚀 ~ file: script.js:310 ~ pegalink", pegalink);
 
 ////////////////////////////////////////////////////////////////////////////////
 
 // Verifique a distância da primeira imagem em relação ao topo da página
+const pegaaimg2 = document.querySelector("img");
+const imgtopdistancia = pegaaimg2.offsetTop;
+
+console.log(imgtopdistancia);
 
 // Retorne a soma da largura de todas as imagens
 
