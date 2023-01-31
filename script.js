@@ -284,14 +284,19 @@ imgs.forEach(() => i++);
 /*------------------JÁ FAZ PARTE DAS NOVA AULAS------------------------ */
 
 // Adicione a classe ativo a todos os itens link do menu
-const addativo = document.querySelectorAll(".menu a");
-addativo.forEach((item) => {
+const menusaddativo = document.querySelectorAll(".menu a");
+menusaddativo.forEach((item) => {
   item.classList.add("ativo");
 });
-
-// console.log("🚀 ~ file: script.js:288 ~ addativo", addativo);
+// console.log("🚀 ~ file: script.js:288 ~ menusaddativo", menusaddativo);
 
 // Remove a classe ativo de todos os itens do menu e mantenha apenas no primeiro
+const removeativo = document.querySelectorAll(".menu a");
+removeativo.forEach((item) => {
+  item.classList.remove("ativo");
+});
+removeativo[0].classList.add("ativo");
+console.log(removeativo);
 
 // Verifique se as imagens possuem o atributo alt
 
