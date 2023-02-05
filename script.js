@@ -319,63 +319,25 @@ const imgtopdistancia = pegaaimg2.offsetTop;
 // console.log(imgtopdistancia);
 
 // Retorne a soma da largura de todas as imagens
-const todasimgaqui = document.querySelectorAll("img");
-
+const imagens = document.querySelectorAll("img");
 let soma = 0;
-todasimgaqui.forEach((imagen) => {
-  soma += imagen.offsetHeight;
+imagens.forEach((imagem) => {
+  soma += imagem.offsetHeight;
 });
 console.log(soma);
 
 // Verifique se os links da página possuem o mínimo recomendado para telas utilizadas  com o dedo. (48px/48px de acordo com o google)
-const links1 = document.querySelectorAll("a");
-links1.forEach((link) => {
-  const linkWidth = link.offsetWidth;
-  const linkHeight = link.offsetHeight;
-  if (linkWidth >= 48 && linkHeight <= 48) {
-    console.log(link, "possui boa acessibilidade");
-  } else {
-    console.log(link, "Não possui boa acessibilidade");
-  }
-});
-// Se o browser for menor que 720px, dicione a classe menu-mobile ao menu a
-const browserSmall = window.matchMedia("(max-width: 720px)").matches;
-if (browserSmall) {
-  const menu = document.querySelector(".meu");
-  menu.classList.add("menu-mobile");
-}
+
 ////////////////////////////////////////////////////////////////////////////////
 
 /* Quando o usuário clicar nos links internos do site,
 adicione a classe ativo ao item clicado e remova dos
 demais itens caso eles possuam a mesma. Previna
  o comportamento padrão desses links */
-const Linksinternos = document.querySelectorAll('a[href^="#"]');
-
-function handleLink(event) {
-  event.preventDefault();
-  Linksinternos.forEach((link) => {
-    link.classList.remove("ativo");
-  });
-  event.currentTarget.classList.add("ativo");
-}
-
-Linksinternos.forEach((link) => {
-  link.addEventListener("click", handleLink);
-});
 
 /* Selecione todos os elementos do site começando a partir do body,
  ao clique mostre exatamente quais elementos estão sendo clicados */
- const TodosElementos1 = document.querySelectorAll("body *");
 
- function handleElemento(event) {
-   console.log(event.currentTarget);
- }
- 
- TodosElementos.forEach((elemento) => {
-   elemento.addEventListener("click", handleElemento);
- });
- console.log(TodosElementos1);
 /* Utilizando o código anterior, ao invés de mostrar no console,
 remova o elemento que está sendo clicado, o método remove() remove um elemento.*/
 
