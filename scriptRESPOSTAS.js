@@ -338,7 +338,7 @@ const img = document.querySelector("img");
 const imgTop = img.offsetTop;
 console.log(imgTop);
 
-// Retorne a soma da largura de todas as imagens
+//! Retorne a soma da largura de todas as imagens
 const imagens = document.querySelectorAll("img");
 let soma = 0;
 imagens.forEach((imagem) => {
@@ -346,7 +346,7 @@ imagens.forEach((imagem) => {
 });
 console.log(soma);
 
-// Verifique se os links da página possuem o mínimo recomendado para telas utilizadas  com o dedo. (48px/48px de acordo com o google)
+//! Verifique se os links da página possuem o mínimo recomendado para telas utilizadas  com o dedo. (48px/48px de acordo com o google)
 const links1 = document.querySelectorAll("a");
 links1.forEach((link) => {
   const linkWidth = link.offsetWidth;
