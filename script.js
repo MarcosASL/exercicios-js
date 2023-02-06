@@ -283,51 +283,58 @@ imgs.forEach(() => i++);
 
 /*------------------JÁ FAZ PARTE DAS NOVA AULAS------------------------ */
 
-// Adicione a classe ativo a todos os itens link do menu
-const menusaddativo = document.querySelectorAll(".menu a");
-menusaddativo.forEach((item) => {
-  item.classList.add("ativo");
+//! Adicione a classe ativo a todos os itens link do menu
+const ativalinks = document.querySelectorAll(".menu a");
+ativalinks.forEach((event) => {
+  event.classList.add("ativo");
 });
-// console.log("🚀 ~ file: script.js:288 ~ menusaddativo", menusaddativo);
+console.log(ativalinks);
 
-// Remove a classe ativo de todos os itens do menu e mantenha apenas no primeiro
+//! Remove a classe ativo de todos os itens do menu e mantenha apenas no primeiro
 const removeativo = document.querySelectorAll(".menu a");
 removeativo.forEach((item) => {
   item.classList.remove("ativo");
 });
 removeativo[0].classList.add("ativo");
-// console.log(removeativo);
 
-// Verifique se as imagens possuem o atributo alt
-const pegaimg = document.querySelectorAll("img");
-pegaimg.forEach((img) => {
-  const verificaativo = img.hasAttribute("alt");
-  // console.log(img, verificaativo);
+//! Verifique se as imagens possuem o atributo alt
+const verimg = document.querySelectorAll("img");
+verimg.forEach((imagem) => {
+  const pegaalt = imagem.hasAttribute("alt");
+  console.log(imagem, pegaalt);
 });
 
-// Modifique o href do link externo no menu
-const pegalink = document.querySelector(".menu a[href^='http']");
-pegalink.setAttribute("href", "www.google.com");
-// console.log("🚀 ~ file: script.js:310 ~ pegalink", pegalink);
+//! Modifique o href do link externo no menu
+const pegahref = document.querySelector(".menu a[href^='http']");
+pegahref.setAttribute("href", "www.google.com");
+console.log(pegahref);
 
 ////////////////////////////////////////////////////////////////////////////////
 
-// Verifique a distância da primeira imagem em relação ao topo da página
-const pegaaimg2 = document.querySelector("img");
-const imgtopdistancia = pegaaimg2.offsetTop;
+//! Verifique a distância da primeira imagem em relação ao topo da página
+const pegaimg = document.querySelector("img");
+const distanciatop = pegaimg.offsetTop;
+console.log(distanciatop);
 
-// console.log(imgtopdistancia);
-
-// Retorne a soma da largura de todas as imagens
-const imagens = document.querySelectorAll("img");
+//! Retorne a soma da largura de todas as imagens
+const somaimgs = document.querySelectorAll("img");
 let soma = 0;
-imagens.forEach((imagem) => {
-  soma += imagem.offsetHeight;
+somaimgs.forEach((img) => {
+  soma += img.offsetHeight;
 });
 console.log(soma);
 
 // Verifique se os links da página possuem o mínimo recomendado para telas utilizadas  com o dedo. (48px/48px de acordo com o google)
-
+const links1 = document.querySelectorAll("a");
+links1.forEach((link) => {
+  const linkWidth = link.offsetWidth;
+  const linkHeight = link.offsetHeight;
+  if (linkWidth >= 48 && linkHeight <= 48) {
+    console.log(link, "possui boa acessibilidade");
+  } else {
+    console.log(link, "Não possui boa acessibilidade");
+  }
+});
 ////////////////////////////////////////////////////////////////////////////////
 
 /* Quando o usuário clicar nos links internos do site,
