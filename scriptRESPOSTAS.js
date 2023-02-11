@@ -358,7 +358,7 @@ links1.forEach((link) => {
   }
 });
 
-// Se o browser for menor que 720px, dicione a classe menu-mobile ao menu a
+//! Se o browser for menor que 720px, dicione a classe menu-mobile ao menu a
 const browserSmall = window.matchMedia("(max-width: 720px)").matches;
 if (browserSmall) {
   const menu = document.querySelector(".meu");

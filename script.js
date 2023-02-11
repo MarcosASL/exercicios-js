@@ -324,7 +324,14 @@ somaimgs.forEach((img) => {
 });
 console.log(soma);
 
-// Verifique se os links da página possuem o mínimo recomendado para telas utilizadas  com o dedo. (48px/48px de acordo com o google)
+//! Se o browser for menor que 720px, dicione a classe menu-mobile ao menu a
+const browserSmall = window.matchMedia("(max-width: 720px)").matches;
+if (browserSmall) {
+  const menu = document.querySelector(".meu");
+  menu.classList.add("menu-mobile");
+}
+
+//! Verifique se os links da página possuem o mínimo recomendado para telas utilizadas  com o dedo. (48px/48px de acordo com o google)
 const links1 = document.querySelectorAll("a");
 links1.forEach((link) => {
   const linkWidth = link.offsetWidth;
