@@ -312,81 +312,42 @@ console.log(pegahref);
 ////////////////////////////////////////////////////////////////////////////////
 
 //! Verifique a distância da primeira imagem em relação ao topo da página
-const pegaimg = document.querySelector("img");
-const distanciatop = pegaimg.offsetTop;
-console.log(distanciatop);
+const img1 = document.querySelector("img");
+const imgtop = img1.offsetTop;
+console.log(imgtop + "px");
 
 //! Retorne a soma da largura de todas as imagens
-const somaimgs = document.querySelectorAll("img");
+const allimgs = document.querySelectorAll("img");
 let soma = 0;
-somaimgs.forEach((img) => {
-  soma += img.offsetHeight;
+allimgs.forEach((imagens) => {
+  soma += imagens.offsetWidth;
 });
-console.log(soma);
+console.log(soma + "px");
 
-//! Se o browser for menor que 720px, dicione a classe menu-mobile ao menu a
-const browserSmall = window.matchMedia("(max-width: 720px)").matches;
-if (browserSmall) {
-  const menu = document.querySelector(".meu");
-  menu.classList.add("menu-mobile");
+//! Se o browser for menor que 720px, adicione a classe menu-mobile ao menu
+const obrowser = window.matchMedia("(max-width: 720px)").matches;
+if (obrowser) {
+  const pegamenu = document.querySelector(".menu");
+  pegamenu.classList.add("menu-mobile");
 }
 
 //! Verifique se os links da página possuem o mínimo recomendado para telas utilizadas  com o dedo. (48px/48px de acordo com o google)
-const links1 = document.querySelectorAll("a");
-links1.forEach((link) => {
-  const linkWidth = link.offsetWidth;
-  const linkHeight = link.offsetHeight;
-  if (linkWidth >= 48 && linkHeight <= 48) {
-    console.log(link, "possui boa acessibilidade");
-  } else {
-    console.log(link, "Não possui boa acessibilidade");
-  }
-});
+const pegalinks = document.querySelectorAll("a");
+
+console.log("🚀 ~ file: script.js:336 ~ links", links);
+
 ////////////////////////////////////////////////////////////////////////////////
 
 /* Quando o usuário clicar nos links internos do site,
 adicione a classe ativo ao item clicado e remova dos
 demais itens caso eles possuam a mesma. Previna
  o comportamento padrão desses links */
-const Linksinternos = document.querySelectorAll('a[href^="#"]');
-
-function handleLink(event) {
-  event.preventDefault();
-  Linksinternos.forEach((link) => {
-    link.classList.remove("ativo");
-  });
-  event.currentTarget.classList.add("ativo");
-}
-
-Linksinternos.forEach((link) => {
-  link.addEventListener("click", handleLink);
-});
 
 /* Selecione todos os elementos do site começando a partir do body,
  ao clique mostre exatamente quais elementos estão sendo clicados */
-const TodosElementos1 = document.querySelectorAll("body *");
-
-function handleElemento(event) {
-  console.log(event.currentTarget);
-}
-
-TodosElementos.forEach((elemento) => {
-  elemento.addEventListener("click", handleElemento);
-});
-console.log(TodosElementos1);
 
 /* Utilizando o código anterior, ao invés de mostrar no console,
 remova o elemento que está sendo clicado, o método remove() remove um elemento.*/
-const TodosElementos = document.querySelectorAll("body *");
-
-function handleElemento(event) {
-  event.currentTarget.remove();
-}
-
-TodosElementos.forEach((elemento) => {
-  elemento.addEventListener("click", handleElemento);
-});
-console.log(TodosElementos);
 
 /* Se o usuário clicar na tecla (t), aumente todo o texto do site.
 (crie no css o estilo html.'nomedaclasse' e bota a font-size sendo grande) */
