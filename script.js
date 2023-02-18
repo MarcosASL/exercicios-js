@@ -358,6 +358,16 @@ Linksinternos.forEach((link) => {
 
 /* Selecione todos os elementos do site começando a partir do body,
  ao clique mostre exatamente quais elementos estão sendo clicados */
+const TodosElementos1 = document.querySelectorAll("body *");
+
+function handleElemento(event) {
+  console.log(event.currentTarget);
+}
+
+TodosElementos.forEach((elemento) => {
+  elemento.addEventListener("click", handleElemento);
+});
+console.log(TodosElementos1);
 
 /* Utilizando o código anterior, ao invés de mostrar no console,
 remova o elemento que está sendo clicado, o método remove() remove um elemento.*/
