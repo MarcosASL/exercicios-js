@@ -406,6 +406,7 @@ const PrimeiroDT = faq1.querySelector("dt"); //dentro do .faq eu pego o dt
 console.log(PrimeiroDT);
 ////////////////////////////////////////////////////////////////////////////////
 // Selecione o DD referente ao primeiro DT (dd é tag de descrição após o dt)
-
+const ProximoDD = PrimeiroDT.nextElementSibling; //pego o 'proximo elemento'
+console.log(ProximoDD);
 //////////////////////////////////////////////////////////////////////////////////
 // Substitua o conteúdo html de .faq pelo de .animais
