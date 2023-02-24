@@ -401,7 +401,9 @@ const cloneMenu = menu.cloneNode(true);
 copy.appendChild(cloneMenu); //move o elemento clonado .menu para o final de .copy
 ////////////////////////////////////////////////////////////////////////////////
 // Selecione o primeiro DT da dl de Faq
-
+const faq1 = document.querySelector(".faq"); //seleciono o .faq
+const PrimeiroDT = faq1.querySelector("dt"); //dentro do .faq eu pego o dt
+console.log(PrimeiroDT);
 ////////////////////////////////////////////////////////////////////////////////
 // Selecione o DD referente ao primeiro DT (dd é tag de descrição após o dt)
 
