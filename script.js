@@ -410,3 +410,6 @@ const ProximoDD = PrimeiroDT.nextElementSibling; //pego o 'proximo elemento'
 console.log(ProximoDD);
 //////////////////////////////////////////////////////////////////////////////////
 // Substitua o conteúdo html de .faq pelo de .animais
+const faq = document.querySelector(".faq"); //seleciono o .faq
+const animais = document.querySelector(".animais"); //seleciono o .animais
+faq.innerHTML = animais.innerHTML;
